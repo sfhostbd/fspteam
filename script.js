@@ -78,24 +78,32 @@ function initContactForm() {
     form.addEventListener('submit', async (e) => {
         e.preventDefault();
         
-        // Add loading state
-        const submitBtn = form.querySelector('button[type="submit"]');
-        const originalText = submitBtn.innerHTML;
-        submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
-        submitBtn.disabled = true;
+        const submitButton = document.querySelector('.submit-button');
+        submitButton.disabled = true;
+        submitButton.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
 
         try {
-            // Simulate form submission (replace with actual API call)
-            await new Promise(resolve => setTimeout(resolve, 2000));
+            const formData = new FormData(form);
             
-            // Show success message
-            showNotification('Message sent successfully!', 'success');
-            form.reset();
+            const response = await fetch(form.action, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            });
+
+            if (response.ok) {
+                showNotification('Message sent successfully!', 'success');
+                form.reset();
+            } else {
+                throw new Error('Failed to send message');
+            }
         } catch (error) {
             showNotification('Failed to send message. Please try again.', 'error');
         } finally {
-            submitBtn.innerHTML = originalText;
-            submitBtn.disabled = false;
+            submitButton.disabled = false;
+            submitButton.innerHTML = '<span>Send Message</span><i class="fas fa-paper-plane"></i>';
         }
     });
 }
@@ -113,7 +121,7 @@ function showNotification(message, type = 'success') {
     
     setTimeout(() => {
         notification.classList.add('show');
-    }, 10);
+    }, 100);
 
     setTimeout(() => {
         notification.classList.remove('show');
@@ -477,6 +485,45 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
+// Stats Animation
+function animateStats() {
+    const stats = document.querySelectorAll('.stat-number');
+    
+    stats.forEach(stat => {
+        const target = parseInt(stat.getAttribute('data-target'));
+        const duration = 2000; // 2 seconds
+        const step = target / (duration / 16); // 60fps
+        let current = 0;
+        
+        function updateCount() {
+            current += step;
+            if (current < target) {
+                stat.textContent = Math.round(current);
+                requestAnimationFrame(updateCount);
+            } else {
+                stat.textContent = target;
+            }
+        }
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    stat.classList.add('animate');
+                    updateCount();
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+        
+        observer.observe(stat);
+    });
+}
+
+// Call animation when document is loaded
+document.addEventListener('DOMContentLoaded', () => {
+    animateStats();
+});
+
 // Initialize
 document.addEventListener('DOMContentLoaded', () => {
     // Event Listeners
@@ -513,4 +560,191 @@ document.addEventListener('DOMContentLoaded', () => {
             handleNavScroll();
         }, 250);
     });
+});
+
+// Reviews Scroll Functionality
+const reviewGrid = document.querySelector('.review-grid');
+let isScrolling = false;
+let startX;
+let scrollLeft;
+let rafId;
+
+// Touch events for mobile
+reviewGrid.addEventListener('touchstart', (e) => {
+    isScrolling = true;
+    startX = e.touches[0].pageX - reviewGrid.offsetLeft;
+    scrollLeft = reviewGrid.scrollLeft;
+    cancelAnimationFrame(rafId);
+}, { passive: true });
+
+reviewGrid.addEventListener('touchmove', (e) => {
+    if (!isScrolling) return;
+    const x = e.touches[0].pageX - reviewGrid.offsetLeft;
+    const walk = (x - startX) * 2;
+    
+    rafId = requestAnimationFrame(() => {
+        reviewGrid.scrollLeft = scrollLeft - walk;
+    });
+}, { passive: true });
+
+reviewGrid.addEventListener('touchend', () => {
+    isScrolling = false;
+    cancelAnimationFrame(rafId);
+    snapToCard();
+});
+
+// Mouse events for desktop
+reviewGrid.addEventListener('mousedown', (e) => {
+    isScrolling = true;
+    startX = e.pageX - reviewGrid.offsetLeft;
+    scrollLeft = reviewGrid.scrollLeft;
+    reviewGrid.style.cursor = 'grabbing';
+    cancelAnimationFrame(rafId);
+});
+
+reviewGrid.addEventListener('mousemove', (e) => {
+    if (!isScrolling) return;
+    e.preventDefault();
+    const x = e.pageX - reviewGrid.offsetLeft;
+    const walk = (x - startX) * 2;
+    
+    rafId = requestAnimationFrame(() => {
+        reviewGrid.scrollLeft = scrollLeft - walk;
+    });
+});
+
+reviewGrid.addEventListener('mouseup', () => {
+    isScrolling = false;
+    reviewGrid.style.cursor = 'grab';
+    cancelAnimationFrame(rafId);
+    snapToCard();
+});
+
+reviewGrid.addEventListener('mouseleave', () => {
+    if (isScrolling) {
+        isScrolling = false;
+        reviewGrid.style.cursor = 'grab';
+        cancelAnimationFrame(rafId);
+        snapToCard();
+    }
+});
+
+// Snap to nearest card
+function snapToCard() {
+    const cardWidth = reviewGrid.querySelector('.review-card').offsetWidth;
+    const scrollPosition = reviewGrid.scrollLeft;
+    const targetPosition = Math.round(scrollPosition / cardWidth) * cardWidth;
+    
+    reviewGrid.scrollTo({
+        left: targetPosition,
+        behavior: 'smooth'
+    });
+}
+
+// Prevent image dragging
+document.querySelectorAll('.reviewer-image').forEach(img => {
+    img.addEventListener('dragstart', (e) => e.preventDefault());
+});
+
+// Initialize grab cursor
+reviewGrid.style.cursor = 'grab';
+
+// Initialize scroll behavior for both grids
+function initScrollBehavior(element) {
+    let isScrolling = false;
+    let startX;
+    let scrollLeft;
+    let rafId;
+
+    element.addEventListener('touchstart', (e) => {
+        isScrolling = true;
+        startX = e.touches[0].pageX - element.offsetLeft;
+        scrollLeft = element.scrollLeft;
+        cancelAnimationFrame(rafId);
+    }, { passive: true });
+
+    element.addEventListener('touchmove', (e) => {
+        if (!isScrolling) return;
+        const x = e.touches[0].pageX - element.offsetLeft;
+        const walk = (x - startX) * 2;
+        
+        rafId = requestAnimationFrame(() => {
+            element.scrollLeft = scrollLeft - walk;
+        });
+    }, { passive: true });
+
+    element.addEventListener('touchend', () => {
+        isScrolling = false;
+        cancelAnimationFrame(rafId);
+        snapToItem(element);
+    });
+
+    element.addEventListener('mousedown', (e) => {
+        isScrolling = true;
+        startX = e.pageX - element.offsetLeft;
+        scrollLeft = element.scrollLeft;
+        element.style.cursor = 'grabbing';
+        cancelAnimationFrame(rafId);
+    });
+
+    element.addEventListener('mousemove', (e) => {
+        if (!isScrolling) return;
+        e.preventDefault();
+        const x = e.pageX - element.offsetLeft;
+        const walk = (x - startX) * 2;
+        
+        rafId = requestAnimationFrame(() => {
+            element.scrollLeft = scrollLeft - walk;
+        });
+    });
+
+    element.addEventListener('mouseup', () => {
+        isScrolling = false;
+        element.style.cursor = 'grab';
+        cancelAnimationFrame(rafId);
+        snapToItem(element);
+    });
+
+    element.addEventListener('mouseleave', () => {
+        if (isScrolling) {
+            isScrolling = false;
+            element.style.cursor = 'grab';
+            cancelAnimationFrame(rafId);
+            snapToItem(element);
+        }
+    });
+
+    element.style.cursor = 'grab';
+}
+
+function snapToItem(element) {
+    const itemWidth = element.children[0].offsetWidth;
+    const scrollPosition = element.scrollLeft;
+    const targetPosition = Math.round(scrollPosition / itemWidth) * itemWidth;
+    
+    element.scrollTo({
+        left: targetPosition,
+        behavior: 'smooth'
+    });
+}
+
+// Initialize scrolling for both grids
+document.addEventListener('DOMContentLoaded', () => {
+    const reviewGrid = document.querySelector('.review-grid');
+    const recognitionGrid = document.querySelector('.recognition-grid');
+    
+    if (reviewGrid) initScrollBehavior(reviewGrid);
+    if (recognitionGrid) initScrollBehavior(recognitionGrid);
+});
+
+// Initialize scroll behavior for certifications
+document.addEventListener('DOMContentLoaded', () => {
+    const certGrid = document.querySelector('.cert-grid');
+    if (certGrid) initScrollBehavior(certGrid);
+});
+
+// Initialize scroll behavior for services
+document.addEventListener('DOMContentLoaded', () => {
+    const servicesGrid = document.querySelector('.services-grid');
+    if (servicesGrid) initScrollBehavior(servicesGrid);
 }); 

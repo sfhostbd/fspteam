@@ -11,17 +11,27 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <svg class="stats-gradient-def" width="0" height="0">
+        <defs>
+            <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#9FE62C" />
+                <stop offset="100%" stop-color="#7AB522" />
+            </linearGradient>
+        </defs>
+    </svg>
+
     <nav class="navbar">
         <div class="nav-container">
             <div class="logo">
+                <img src="logo.png" alt="FSPTEAM Logo" style="height: 60px; width: auto;">
                 <span class="logo-text">FSP<span class="logo-highlight">TEAM</span></span>
             </div>
             
-            <div class="menu-toggle">
+            <button class="menu-toggle" aria-label="Toggle navigation">
                 <span></span>
                 <span></span>
                 <span></span>
-            </div>
+            </button>
 
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
@@ -37,8 +47,7 @@
         <div class="hero-content">
             <div class="hero-text">
                 <div class="brand-name">
-                    <span class="fsp">FSP</span>
-                    <span class="team">TEAM</span>
+                    <span class="logo-text">FSP<span class="logo-highlight">TEAM</span></span>
                 </div>
                 <p class="hero-description">
                     Transforming ideas into digital excellence with innovative design and development solutions
@@ -94,113 +103,116 @@
         </div>
     </section>
 
-    <section id="services" class="services">
-        <div class="section-container">
-            <div class="section-header">
-                <h2>Our Services</h2>
-                <p>Comprehensive digital solutions for your business growth</p>
+    <section id="certifications" class="certifications">
+        <div class="section-header">
+            <h2>Our Certifications</h2>
+            <p>Professional standards and industry recognition</p>
+        </div>
+        <div class="cert-grid">
+            <div class="cert-item">
+                <div class="cert-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3 class="cert-title">Licensed & Insured</h3>
+                <p class="cert-subtitle">Full coverage for your peace of mind</p>
             </div>
             
-            <div class="services-container">
-                <button class="scroll-btn left" aria-label="Scroll left">
-                    <i class="fas fa-chevron-left"></i>
-                </button>
+            <div class="cert-item">
+                <div class="cert-icon">
+                    <i class="fas fa-history"></i>
+                </div>
+                <h3 class="cert-title">10+ Years Experience</h3>
+                <p class="cert-subtitle">Proven track record of excellence</p>
+            </div>
             
-            <div class="services-grid">
-                <div class="service-item">
-                    <div class="service-icon">
-                        <i class="fas fa-palette"></i>
-                    </div>
-                    <div class="service-content">
-                            <h3>UI/UX Design</h3>
-                        <ul class="service-features">
-                                <li>User Interface Design</li>
-                                <li>User Experience Design</li>
-                                <li>Wireframing & Prototyping</li>
-                                <li>Mobile App Design</li>
-                        </ul>
-                    </div>
+            <div class="cert-item">
+                <div class="cert-icon">
+                    <i class="fas fa-certificate"></i>
                 </div>
-
-                <div class="service-item">
-                    <div class="service-icon">
-                        <i class="fas fa-code"></i>
-                    </div>
-                    <div class="service-content">
-                        <h3>Web Development</h3>
-                        <ul class="service-features">
-                            <li>Custom Website Development</li>
-                            <li>E-commerce Solutions</li>
-                                <li>CMS Development</li>
-                                <li>API Integration</li>
-                        </ul>
-                    </div>
+                <h3 class="cert-title">Certified Experts</h3>
+                <p class="cert-subtitle">Industry-leading professionals</p>
+            </div>
+            
+            <div class="cert-item">
+                <div class="cert-icon">
+                    <i class="fas fa-award"></i>
                 </div>
-
-                <div class="service-item">
-                    <div class="service-icon">
-                            <i class="fas fa-mobile-alt"></i>
-                        </div>
-                        <div class="service-content">
-                            <h3>Mobile Development</h3>
-                            <ul class="service-features">
-                                <li>iOS App Development</li>
-                                <li>Android App Development</li>
-                                <li>Cross-Platform Apps</li>
-                                <li>App Maintenance</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="service-item">
-                        <div class="service-icon">
-                            <i class="fas fa-chart-line"></i>
-                    </div>
-                    <div class="service-content">
-                        <h3>Digital Marketing</h3>
-                        <ul class="service-features">
-                                <li>SEO Optimization</li>
-                            <li>Social Media Marketing</li>
-                                <li>Content Marketing</li>
-                                <li>Email Campaigns</li>
-                        </ul>
-                    </div>
+                <h3 class="cert-title">ISO 9001:2015</h3>
+                <p class="cert-subtitle">Quality Management System</p>
+            </div>
+            
+            <div class="cert-item">
+                <div class="cert-icon">
+                    <i class="fas fa-check-circle"></i>
                 </div>
+                <h3 class="cert-title">OHSAS 18001</h3>
+                <p class="cert-subtitle">Occupational Health & Safety</p>
+            </div>
+        </div>
+    </section>
 
-                    <div class="service-item">
-                        <div class="service-icon">
-                            <i class="fas fa-cloud"></i>
-                        </div>
-                        <div class="service-content">
-                            <h3>Cloud Solutions</h3>
-                            <ul class="service-features">
-                                <li>Cloud Migration</li>
-                                <li>AWS Services</li>
-                                <li>Cloud Security</li>
-                                <li>DevOps Services</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="service-item">
-                        <div class="service-icon">
-                            <i class="fas fa-shield-alt"></i>
-                        </div>
-                        <div class="service-content">
-                            <h3>Cybersecurity</h3>
-                            <ul class="service-features">
-                                <li>Security Audits</li>
-                                <li>Penetration Testing</li>
-                                <li>Security Consulting</li>
-                                <li>Incident Response</li>
-                            </ul>
-                        </div>
-                    </div>
+    <section id="services" class="services">
+        <div class="section-header">
+            <h2>Our Services</h2>
+            <p>Comprehensive digital solutions for your business</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-item">
+                <div class="service-icon">
+                    <i class="fas fa-pencil-ruler"></i>
                 </div>
-
-                <button class="scroll-btn right" aria-label="Scroll right">
-                    <i class="fas fa-chevron-right"></i>
-                </button>
+                <h3>Graphics Design</h3>
+                <p>Creative visual solutions for branding and marketing materials</p>
+            </div>
+            <div class="service-item">
+                <div class="service-icon">
+                    <i class="fas fa-paint-brush"></i>
+                </div>
+                <h3>UI/UX Design</h3>
+                <p>User-centered design solutions that enhance digital experiences</p>
+            </div>
+            
+            <div class="service-item">
+                <div class="service-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h3>Digital Marketing</h3>
+                <p>Strategic marketing solutions to grow your online presence</p>
+            </div>
+            
+            <div class="service-item">
+                <div class="service-icon">
+                    <i class="fas fa-code"></i>
+                </div>
+                <h3>Web Development</h3>
+                <p>Custom websites and web applications built with modern technologies</p>
+            </div>
+            
+            <div class="service-item">
+                <div class="service-icon">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <h3>Mobile Apps</h3>
+                <p>Native and cross-platform mobile applications for iOS and Android</p>
+            </div>
+            
+            
+            <div class="service-item">
+                <div class="service-icon">
+                    <i class="fas fa-cloud"></i>
+                </div>
+                <h3>Cloud Solutions</h3>
+                <p>Scalable cloud infrastructure and deployment services</p>
+            </div>
+            
+           
+            
+            <div class="service-item">
+                <div class="service-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3>Cybersecurity</h3>
+                <p>Comprehensive security solutions to protect your digital assets</p>
             </div>
         </div>
     </section>
@@ -753,90 +765,733 @@
                 </button>
 
                 <div class="portfolio-grid">
+                    <!-- E-Learning Platform -->
                     <div class="portfolio-item" data-category="web">
                         <div class="portfolio-image">
-                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80" alt="E-Learning Platform">
-                </div>
+                            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800&q=80" 
+                                 alt="E-Learning Platform">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-links">
+                                    <a href="#" class="view-project">View Project</a>
+                                    <a href="#" class="case-study">Case Study</a>
+                                </div>
+                            </div>
+                        </div>
                         <div class="portfolio-content">
                             <h3>E-Learning Platform</h3>
-                            <p>Modern learning management system</p>
+                            <p>Modern learning management system with interactive features and real-time collaboration tools.</p>
                             <div class="portfolio-tags">
                                 <span class="portfolio-tag">React</span>
                                 <span class="portfolio-tag">Node.js</span>
-                    </div>
-                    </div>
+                                <span class="portfolio-tag">MongoDB</span>
+                            </div>
+                            <div class="portfolio-metrics">
+                                <div class="metric">
+                                    <i class="fas fa-users"></i>
+                                    <span>50K+ Users</span>
+                                </div>
+                                <div class="metric">
+                                    <i class="fas fa-chart-line"></i>
+                                    <span>95% Growth</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
+                    <!-- FitTrack Pro -->
                     <div class="portfolio-item" data-category="mobile">
                         <div class="portfolio-image">
-                            <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&q=80" alt="Fitness App">
-                    </div>
+                            <img src="https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?w=800&q=80" 
+                                 alt="FitTrack Pro App">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-links">
+                                    <a href="#" class="view-project">View Project</a>
+                                    <a href="#" class="case-study">Case Study</a>
+                                </div>
+                            </div>
+                        </div>
                         <div class="portfolio-content">
-                            <h3>Fitness Tracker</h3>
-                            <p>Health monitoring mobile app</p>
+                            <h3>FitTrack Pro</h3>
+                            <p>AI-powered fitness tracking app with personalized workout plans and nutrition guidance.</p>
                             <div class="portfolio-tags">
                                 <span class="portfolio-tag">Flutter</span>
                                 <span class="portfolio-tag">Firebase</span>
-                </div>
-                </div>
-            </div>
+                                <span class="portfolio-tag">TensorFlow</span>
+                            </div>
+                            <div class="portfolio-metrics">
+                                <div class="metric">
+                                    <i class="fas fa-download"></i>
+                                    <span>100K+ Downloads</span>
+                                </div>
+                                <div class="metric">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.8 Rating</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
+                    <!-- Fashion Store -->
                     <div class="portfolio-item" data-category="ecommerce">
                         <div class="portfolio-image">
-                            <img src="https://images.unsplash.com/photo-1472851294608-062f824d29cc?w=800&q=80" alt="Online Store">
+                            <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800&q=80" 
+                                 alt="Online Store">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-links">
+                                    <a href="#" class="view-project">View Project</a>
+                                    <a href="#" class="case-study">Case Study</a>
+                                </div>
+                            </div>
                         </div>
                         <div class="portfolio-content">
                             <h3>Fashion Store</h3>
-                            <p>E-commerce platform</p>
+                            <p>Premium e-commerce platform with advanced product customization and AR try-on features.</p>
                             <div class="portfolio-tags">
                                 <span class="portfolio-tag">Shopify</span>
                                 <span class="portfolio-tag">Custom Theme</span>
+                                <span class="portfolio-tag">AR/VR</span>
+                            </div>
+                            <div class="portfolio-metrics">
+                                <div class="metric">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    <span>200% Sales Growth</span>
+                                </div>
+                                <div class="metric">
+                                    <i class="fas fa-users"></i>
+                                    <span>75K+ Customers</span>
+                                </div>
                             </div>
                         </div>
-            </div>
+                    </div>
 
-                <div class="portfolio-item" data-category="design">
-                    <div class="portfolio-image">
-                            <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800&q=80" alt="Brand Design">
+                    <!-- Brand Identity -->
+                    <div class="portfolio-item" data-category="design">
+                        <div class="portfolio-image">
+                            <img src="https://images.unsplash.com/photo-1634942537034-2531766767d1?w=800&q=80" 
+                                 alt="Brand Design">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-links">
+                                    <a href="#" class="view-project">View Project</a>
+                                    <a href="#" class="case-study">Case Study</a>
+                                </div>
                             </div>
+                        </div>
                         <div class="portfolio-content">
                             <h3>Brand Identity</h3>
-                            <p>Complete brand redesign</p>
+                            <p>Complete brand transformation for a global tech company, including digital and print assets.</p>
                             <div class="portfolio-tags">
                                 <span class="portfolio-tag">UI/UX</span>
                                 <span class="portfolio-tag">Branding</span>
+                                <span class="portfolio-tag">Design Systems</span>
+                            </div>
+                            <div class="portfolio-metrics">
+                                <div class="metric">
+                                    <i class="fas fa-award"></i>
+                                    <span>Design Award</span>
+                                </div>
+                                <div class="metric">
+                                    <i class="fas fa-chart-line"></i>
+                                    <span>150% Brand Value</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="portfolio-item" data-category="web">
-                    <div class="portfolio-image">
-                            <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80" alt="Analytics Dashboard">
+                    <!-- Analytics Dashboard -->
+                    <div class="portfolio-item" data-category="web">
+                        <div class="portfolio-image">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80" 
+                                 alt="Analytics Dashboard">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-links">
+                                    <a href="#" class="view-project">View Project</a>
+                                    <a href="#" class="case-study">Case Study</a>
+                                </div>
                             </div>
+                        </div>
                         <div class="portfolio-content">
                             <h3>Analytics Dashboard</h3>
-                            <p>Business intelligence platform</p>
+                            <p>Real-time business intelligence platform with predictive analytics and custom reporting.</p>
                             <div class="portfolio-tags">
                                 <span class="portfolio-tag">Vue.js</span>
                                 <span class="portfolio-tag">D3.js</span>
+                                <span class="portfolio-tag">ML/AI</span>
+                            </div>
+                            <div class="portfolio-metrics">
+                                <div class="metric">
+                                    <i class="fas fa-clock"></i>
+                                    <span>45% Time Saved</span>
+                                </div>
+                                <div class="metric">
+                                    <i class="fas fa-building"></i>
+                                    <span>500+ Companies</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
 
+                    <!-- Food Delivery App -->
                     <div class="portfolio-item" data-category="mobile">
-                    <div class="portfolio-image">
-                            <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&q=80" alt="Food Delivery">
+                        <div class="portfolio-image">
+                            <img src="https://images.unsplash.com/photo-1526367790999-0150786686a2?w=800&q=80" 
+                                 alt="Food Delivery">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-links">
+                                    <a href="#" class="view-project">View Project</a>
+                                    <a href="#" class="case-study">Case Study</a>
+                                </div>
                             </div>
+                        </div>
                         <div class="portfolio-content">
                             <h3>Food Delivery App</h3>
-                            <p>On-demand delivery platform</p>
+                            <p>Smart food delivery platform with real-time tracking and AI-powered order optimization.</p>
                             <div class="portfolio-tags">
                                 <span class="portfolio-tag">React Native</span>
                                 <span class="portfolio-tag">Maps API</span>
+                                <span class="portfolio-tag">Node.js</span>
+                            </div>
+                            <div class="portfolio-metrics">
+                                <div class="metric">
+                                    <i class="fas fa-motorcycle"></i>
+                                    <span>1M+ Deliveries</span>
+                                </div>
+                                <div class="metric">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.9 Rating</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
+
+                    <!-- SaaS Platform -->
+                    <div class="portfolio-item" data-category="web">
+                        <div class="portfolio-image">
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80" 
+                                 alt="SaaS Platform">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-links">
+                                    <a href="#" class="view-project">View Project</a>
+                                    <a href="#" class="case-study">Case Study</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>Project Management SaaS</h3>
+                            <p>Enterprise-grade project management platform with AI-powered resource allocation.</p>
+                            <div class="portfolio-tags">
+                                <span class="portfolio-tag">Next.js</span>
+                                <span class="portfolio-tag">GraphQL</span>
+                                <span class="portfolio-tag">AWS</span>
+                            </div>
+                            <div class="portfolio-metrics">
+                                <div class="metric">
+                                    <i class="fas fa-building"></i>
+                                    <span>300+ Teams</span>
+                                </div>
+                                <div class="metric">
+                                    <i class="fas fa-tasks"></i>
+                                    <span>1M+ Tasks</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- IoT Dashboard -->
+                    <div class="portfolio-item" data-category="web">
+                        <div class="portfolio-image">
+                            <img src="https://images.unsplash.com/photo-1558346490-a72e53ae2d4f?w=800&q=80" 
+                                 alt="IoT Dashboard">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-links">
+                                    <a href="#" class="view-project">View Project</a>
+                                    <a href="#" class="case-study">Case Study</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>Smart Home IoT Platform</h3>
+                            <p>Real-time IoT monitoring dashboard for smart home devices with predictive maintenance.</p>
+                            <div class="portfolio-tags">
+                                <span class="portfolio-tag">React</span>
+                                <span class="portfolio-tag">WebSocket</span>
+                                <span class="portfolio-tag">IoT</span>
+                            </div>
+                            <div class="portfolio-metrics">
+                                <div class="metric">
+                                    <i class="fas fa-microchip"></i>
+                                    <span>50K+ Devices</span>
+                                </div>
+                                <div class="metric">
+                                    <i class="fas fa-home"></i>
+                                    <span>10K+ Homes</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Healthcare App -->
+                    <div class="portfolio-item" data-category="mobile">
+                        <div class="portfolio-image">
+                            <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&q=80" 
+                                 alt="Healthcare App">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-links">
+                                    <a href="#" class="view-project">View Project</a>
+                                    <a href="#" class="case-study">Case Study</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>TeleHealth Platform</h3>
+                            <p>HIPAA-compliant telehealth solution with integrated EHR and appointment scheduling.</p>
+                            <div class="portfolio-tags">
+                                <span class="portfolio-tag">Swift</span>
+                                <span class="portfolio-tag">Kotlin</span>
+                                <span class="portfolio-tag">FHIR</span>
+                            </div>
+                            <div class="portfolio-metrics">
+                                <div class="metric">
+                                    <i class="fas fa-user-md"></i>
+                                    <span>5K+ Doctors</span>
+                                </div>
+                                <div class="metric">
+                                    <i class="fas fa-calendar-check"></i>
+                                    <span>100K+ Consults</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- NFT Marketplace -->
+                    <div class="portfolio-item" data-category="web">
+                        <div class="portfolio-image">
+                            <img src="https://images.unsplash.com/photo-1620321023374-d1a68fbc720d?w=800&q=80" 
+                                 alt="NFT Marketplace">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-links">
+                                    <a href="#" class="view-project">View Project</a>
+                                    <a href="#" class="case-study">Case Study</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>NFT Trading Platform</h3>
+                            <p>Decentralized NFT marketplace with multi-chain support and advanced trading features.</p>
+                            <div class="portfolio-tags">
+                                <span class="portfolio-tag">Web3.js</span>
+                                <span class="portfolio-tag">Solidity</span>
+                                <span class="portfolio-tag">IPFS</span>
+                            </div>
+                            <div class="portfolio-metrics">
+                                <div class="metric">
+                                    <i class="fas fa-cube"></i>
+                                    <span>100K+ NFTs</span>
+                                </div>
+                                <div class="metric">
+                                    <i class="fas fa-dollar-sign"></i>
+                                    <span>$10M+ Volume</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Travel App -->
+                    <div class="portfolio-item" data-category="mobile">
+                        <div class="portfolio-image">
+                            <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=800&q=80" 
+                                 alt="Travel App">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-links">
+                                    <a href="#" class="view-project">View Project</a>
+                                    <a href="#" class="case-study">Case Study</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>Smart Travel Companion</h3>
+                            <p>AI-powered travel planner with local recommendations and real-time itinerary optimization.</p>
+                            <div class="portfolio-tags">
+                                <span class="portfolio-tag">React Native</span>
+                                <span class="portfolio-tag">AI/ML</span>
+                                <span class="portfolio-tag">MongoDB</span>
+                            </div>
+                            <div class="portfolio-metrics">
+                                <div class="metric">
+                                    <i class="fas fa-plane"></i>
+                                    <span>2M+ Trips</span>
+                                </div>
+                                <div class="metric">
+                                    <i class="fas fa-globe"></i>
+                                    <span>150+ Countries</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Financial App -->
+                    <div class="portfolio-item" data-category="mobile">
+                        <div class="portfolio-image">
+                            <img src="https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?w=800&q=80" 
+                                 alt="Finance App">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-links">
+                                    <a href="#" class="view-project">View Project</a>
+                                    <a href="#" class="case-study">Case Study</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>FinTech Mobile Banking</h3>
+                            <p>Next-gen mobile banking platform with AI-driven financial insights and crypto integration.</p>
+                            <div class="portfolio-tags">
+                                <span class="portfolio-tag">Flutter</span>
+                                <span class="portfolio-tag">Blockchain</span>
+                                <span class="portfolio-tag">ML</span>
+                            </div>
+                            <div class="portfolio-metrics">
+                                <div class="metric">
+                                    <i class="fas fa-university"></i>
+                                    <span>$2B+ Processed</span>
+                                </div>
+                                <div class="metric">
+                                    <i class="fas fa-shield-alt"></i>
+                                    <span>Bank-Grade Security</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- E-commerce Design System -->
+                    <div class="portfolio-item" data-category="design">
+                        <div class="portfolio-image">
+                            <img src="https://images.unsplash.com/photo-1523726491678-bf852e717f6a?w=800&q=80" 
+                                 alt="Design System">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-links">
+                                    <a href="#" class="view-project">View Project</a>
+                                    <a href="#" class="case-study">Case Study</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>Global Design System</h3>
+                            <p>Comprehensive design system for a multinational e-commerce platform operating in 30+ countries.</p>
+                            <div class="portfolio-tags">
+                                <span class="portfolio-tag">Design Systems</span>
+                                <span class="portfolio-tag">Figma</span>
+                                <span class="portfolio-tag">Documentation</span>
+                            </div>
+                            <div class="portfolio-metrics">
+                                <div class="metric">
+                                    <i class="fas fa-puzzle-piece"></i>
+                                    <span>500+ Components</span>
+                                </div>
+                                <div class="metric">
+                                    <i class="fas fa-code"></i>
+                                    <span>90% Dev Efficiency</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Marketing Website -->
+                    <div class="portfolio-item" data-category="design">
+                        <div class="portfolio-image">
+                            <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800&q=80" 
+                                 alt="Marketing Site">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-links">
+                                    <a href="#" class="view-project">View Project</a>
+                                    <a href="#" class="case-study">Case Study</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>SaaS Marketing Site</h3>
+                            <p>Award-winning marketing website design with interactive storytelling and micro-animations.</p>
+                            <div class="portfolio-tags">
+                                <span class="portfolio-tag">UI/UX</span>
+                                <span class="portfolio-tag">Animation</span>
+                                <span class="portfolio-tag">Webflow</span>
+                            </div>
+                            <div class="portfolio-metrics">
+                                <div class="metric">
+                                    <i class="fas fa-arrow-up"></i>
+                                    <span>250% Conversions</span>
+                                </div>
+                                <div class="metric">
+                                    <i class="fas fa-trophy"></i>
+                                    <span>Awwwards Site</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mobile App Design System -->
+                    <div class="portfolio-item" data-category="design">
+                        <div class="portfolio-image">
+                            <img src="https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?w=800&q=80" 
+                                 alt="Mobile Design System">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-links">
+                                    <a href="#" class="view-project">View Project</a>
+                                    <a href="#" class="case-study">Case Study</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>Mobile Design System</h3>
+                            <p>Cross-platform design system powering 15+ mobile apps with consistent user experience.</p>
+                            <div class="portfolio-tags">
+                                <span class="portfolio-tag">Design Systems</span>
+                                <span class="portfolio-tag">Mobile UI</span>
+                                <span class="portfolio-tag">Atomic Design</span>
+                            </div>
+                            <div class="portfolio-metrics">
+                                <div class="metric">
+                                    <i class="fas fa-mobile-alt"></i>
+                                    <span>15+ Apps</span>
+                                </div>
+                                <div class="metric">
+                                    <i class="fas fa-clock"></i>
+                                    <span>60% Faster Design</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Dashboard Design -->
+                    <div class="portfolio-item" data-category="design">
+                        <div class="portfolio-image">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80" 
+                                 alt="Dashboard Design">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-links">
+                                    <a href="#" class="view-project">View Project</a>
+                                    <a href="#" class="case-study">Case Study</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>Enterprise Dashboard</h3>
+                            <p>Data visualization and analytics dashboard design with advanced filtering capabilities.</p>
+                            <div class="portfolio-tags">
+                                <span class="portfolio-tag">Dashboard UI</span>
+                                <span class="portfolio-tag">Data Viz</span>
+                                <span class="portfolio-tag">UX Research</span>
+                            </div>
+                            <div class="portfolio-metrics">
+                                <div class="metric">
+                                    <i class="fas fa-chart-line"></i>
+                                    <span>40% Efficiency</span>
+                                </div>
+                                <div class="metric">
+                                    <i class="fas fa-user-check"></i>
+                                    <span>95% User Satisfaction</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Luxury E-commerce -->
+                    <div class="portfolio-item" data-category="ecommerce">
+                        <div class="portfolio-image">
+                            <img src="https://images.unsplash.com/photo-1541597455068-49e3562bdfa4?w=800&q=80" 
+                                 alt="Luxury E-commerce">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-links">
+                                    <a href="#" class="view-project">View Project</a>
+                                    <a href="#" class="case-study">Case Study</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>Luxury Retail Platform</h3>
+                            <p>High-end e-commerce platform with virtual try-on and personalized shopping experience.</p>
+                            <div class="portfolio-tags">
+                                <span class="portfolio-tag">Vue.js</span>
+                                <span class="portfolio-tag">AR/VR</span>
+                                <span class="portfolio-tag">Headless CMS</span>
+                            </div>
+                            <div class="portfolio-metrics">
+                                <div class="metric">
+                                    <i class="fas fa-shopping-bag"></i>
+                                    <span>300% ROI</span>
+                                </div>
+                                <div class="metric">
+                                    <i class="fas fa-user-plus"></i>
+                                    <span>85% Return Rate</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Marketplace Platform -->
+                    <div class="portfolio-item" data-category="ecommerce">
+                        <div class="portfolio-image">
+                            <img src="https://images.unsplash.com/photo-1472851294608-062f824d29cc?w=800&q=80" 
+                                 alt="Marketplace Platform">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-links">
+                                    <a href="#" class="view-project">View Project</a>
+                                    <a href="#" class="case-study">Case Study</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>Multi-vendor Marketplace</h3>
+                            <p>Global marketplace platform with integrated vendor management and automated fulfillment.</p>
+                            <div class="portfolio-tags">
+                                <span class="portfolio-tag">Next.js</span>
+                                <span class="portfolio-tag">Stripe Connect</span>
+                                <span class="portfolio-tag">Redis</span>
+                            </div>
+                            <div class="portfolio-metrics">
+                                <div class="metric">
+                                    <i class="fas fa-store"></i>
+                                    <span>10K+ Vendors</span>
+                                </div>
+                                <div class="metric">
+                                    <i class="fas fa-globe"></i>
+                                    <span>Global Reach</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Grocery E-commerce -->
+                    <div class="portfolio-item" data-category="ecommerce">
+                        <div class="portfolio-image">
+                            <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?w=800&q=80" 
+                                 alt="Grocery Platform">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-links">
+                                    <a href="#" class="view-project">View Project</a>
+                                    <a href="#" class="case-study">Case Study</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>Smart Grocery Platform</h3>
+                            <p>AI-powered grocery delivery platform with smart inventory and real-time order tracking.</p>
+                            <div class="portfolio-tags">
+                                <span class="portfolio-tag">React</span>
+                                <span class="portfolio-tag">Node.js</span>
+                                <span class="portfolio-tag">ML/AI</span>
+                            </div>
+                            <div class="portfolio-metrics">
+                                <div class="metric">
+                                    <i class="fas fa-shopping-basket"></i>
+                                    <span>500K+ Orders</span>
+                                </div>
+                                <div class="metric">
+                                    <i class="fas fa-truck"></i>
+                                    <span>30min Delivery</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- B2B E-commerce -->
+                    <div class="portfolio-item" data-category="ecommerce">
+                        <div class="portfolio-image">
+                            <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80" 
+                                 alt="B2B Platform">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-links">
+                                    <a href="#" class="view-project">View Project</a>
+                                    <a href="#" class="case-study">Case Study</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>B2B Trading Platform</h3>
+                            <p>Enterprise B2B e-commerce solution with custom pricing and automated procurement.</p>
+                            <div class="portfolio-tags">
+                                <span class="portfolio-tag">Angular</span>
+                                <span class="portfolio-tag">Java</span>
+                                <span class="portfolio-tag">SAP</span>
+                            </div>
+                            <div class="portfolio-metrics">
+                                <div class="metric">
+                                    <i class="fas fa-handshake"></i>
+                                    <span>$50M+ Trade Volume</span>
+                                </div>
+                                <div class="metric">
+                                    <i class="fas fa-industry"></i>
+                                    <span>100+ Enterprise Clients</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Auction Platform -->
+                    <div class="portfolio-item" data-category="ecommerce">
+                        <div class="portfolio-image">
+                            <img src="https://images.unsplash.com/photo-1607082349566-187342175e2f?w=800&q=80" 
+                                 alt="Auction Platform">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-links">
+                                    <a href="#" class="view-project">View Project</a>
+                                    <a href="#" class="case-study">Case Study</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>Live Auction Platform</h3>
+                            <p>Real-time auction platform with live bidding and blockchain-based verification.</p>
+                            <div class="portfolio-tags">
+                                <span class="portfolio-tag">WebSocket</span>
+                                <span class="portfolio-tag">Ethereum</span>
+                                <span class="portfolio-tag">Redis</span>
+                            </div>
+                            <div class="portfolio-metrics">
+                                <div class="metric">
+                                    <i class="fas fa-gavel"></i>
+                                    <span>10K+ Auctions</span>
+                                </div>
+                                <div class="metric">
+                                    <i class="fas fa-users"></i>
+                                    <span>100K+ Bidders</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Subscription Commerce -->
+                    <div class="portfolio-item" data-category="ecommerce">
+                        <div class="portfolio-image">
+                            <img src="https://images.unsplash.com/photo-1434626881859-194d67b2b86f?w=800&q=80" 
+                                 alt="Subscription Platform">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-links">
+                                    <a href="#" class="view-project">View Project</a>
+                                    <a href="#" class="case-study">Case Study</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>Subscription Box Platform</h3>
+                            <p>Personalized subscription commerce platform with AI-driven product curation.</p>
+                            <div class="portfolio-tags">
+                                <span class="portfolio-tag">Python</span>
+                                <span class="portfolio-tag">Django</span>
+                                <span class="portfolio-tag">Stripe</span>
+                            </div>
+                            <div class="portfolio-metrics">
+                                <div class="metric">
+                                    <i class="fas fa-box"></i>
+                                    <span>50K+ Subscribers</span>
+                                </div>
+                                <div class="metric">
+                                    <i class="fas fa-redo"></i>
+                                    <span>92% Retention</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
-            </div>
 
                 <button class="scroll-btn right" aria-label="Scroll right">
                     <i class="fas fa-chevron-right"></i>
@@ -858,6 +1513,7 @@
                 </button>
                 
                 <div class="team-grid">
+
                     <div class="team-member">
                         <div class="member-image">
                             <img src="abdul-halim.jpg.jpg" 
@@ -870,28 +1526,40 @@
                             <p class="member-bio">Full Stack Developer</p>
                         </div>
                     </div>
-
                     <div class="team-member">
                         <div class="member-image">
-                            <img src="https://images.unsplash.com/photo-1557862921-37829c790f19?w=800&q=80" 
-                                 alt="MD Iqbal"
+                            <img src="https://images.unsplash.com/photo-1600486913747-55e5470d6f40?w=800&q=80" 
+                                 alt="John Anderson"
                                  loading="lazy">
                         </div>
                         <div class="member-info">
-                            <h3>MD Iqbal</h3>
+                            <h3>John Anderson</h3>
                             <span class="position">Frontend Lead</span>
-                            <p class="member-bio">React & Next.js</p>
+                            <p class="member-bio">React & Next.js Expert</p>
                         </div>
                     </div>
 
                     <div class="team-member">
                         <div class="member-image">
-                            <img src="https://images.unsplash.com/photo-1618641986557-1ecd230959aa?w=800&q=80" 
-                                 alt="MD Rakib"
+                            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=800&q=80" 
+                                 alt="Sarah Mitchell"
                                  loading="lazy">
                         </div>
                         <div class="member-info">
-                            <h3>MD Rakib</h3>
+                            <h3>Sarah Mitchell</h3>
+                            <span class="position">UI/UX Designer</span>
+                            <p class="member-bio">Figma & Adobe Creative Suite</p>
+                        </div>
+                    </div>
+
+                    <div class="team-member">
+                        <div class="member-image">
+                            <img src="https://images.unsplash.com/photo-1537511446984-935f663eb1f4?w=800&q=80" 
+                                 alt="David Chen"
+                                 loading="lazy">
+                        </div>
+                        <div class="member-info">
+                            <h3>David Chen</h3>
                             <span class="position">Backend Lead</span>
                             <p class="member-bio">Node.js & MongoDB</p>
                         </div>
@@ -899,66 +1567,119 @@
 
                     <div class="team-member">
                         <div class="member-image">
-                            <img src="https://images.unsplash.com/photo-1639149888905-fb39731f2e6c?w=800&q=80" 
-                                 alt="Sujan Das"
+                            <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=800&q=80" 
+                                 alt="Emma Watson"
                                  loading="lazy">
                         </div>
                         <div class="member-info">
-                            <h3>Sujan Das</h3>
-                            <span class="position">UI/UX Lead</span>
-                            <p class="member-bio">Design Systems</p>
+                            <h3>Emma Watson</h3>
+                            <span class="position">Project Manager</span>
+                            <p class="member-bio">Agile & Scrum Master</p>
+                        </div>
+                    </div>
+
+                    <div class="team-member">
+                        <div class="member-image">
+                            <img src="https://images.unsplash.com/photo-1556157382-97eda2d62296?w=800&q=80" 
+                                 alt="Michael Torres"
+                                 loading="lazy">
+                        </div>
+                        <div class="member-info">
+                            <h3>Michael Torres</h3>
+                            <span class="position">Mobile Developer</span>
+                            <p class="member-bio">React Native & iOS</p>
+                        </div>
+                    </div>
+
+                    <div class="team-member">
+                        <div class="member-image">
+                            <img src="https://images.unsplash.com/photo-1598550874175-4d0ef436c909?w=800&q=80" 
+                                 alt="Sophia Lee"
+                                 loading="lazy">
+                        </div>
+                        <div class="member-info">
+                            <h3>Sophia Lee</h3>
+                            <span class="position">DevOps Engineer</span>
+                            <p class="member-bio">AWS & Kubernetes</p>
+                        </div>
+                    </div>
+
+                    <!-- Add these new team members -->
+                    <div class="team-member">
+                        <div class="member-image">
+                            <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=800&q=80" 
+                                 alt="Rachel Chen"
+                                 loading="lazy">
+                        </div>
+                        <div class="member-info">
+                            <h3>Rachel Chen</h3>
+                            <span class="position">QA Engineer</span>
+                            <p class="member-bio">Automation & Testing</p>
                         </div>
                     </div>
 
                     <div class="team-member">
                         <div class="member-image">
                             <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=800&q=80" 
-                                 alt="Saiful Islam"
+                                 alt="Marcus Johnson"
                                  loading="lazy">
-                            </div>
+                        </div>
                         <div class="member-info">
-                            <h3>Saiful Islam</h3>
-                            <span class="position">Mobile Lead</span>
-                            <p class="member-bio">Flutter & Firebase</p>
+                            <h3>Marcus Johnson</h3>
+                            <span class="position">DevOps Engineer</span>
+                            <p class="member-bio">CI/CD & Docker</p>
                         </div>
                     </div>
 
                     <div class="team-member">
                         <div class="member-image">
-                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80" 
-                                 alt="Ariful Islam"
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=800&q=80" 
+                                 alt="Sophie Anderson"
                                  loading="lazy">
                         </div>
                         <div class="member-info">
-                            <h3>Ariful Islam</h3>
-                            <span class="position">DevOps Lead</span>
-                            <p class="member-bio">AWS & Docker</p>
+                            <h3>Sophie Anderson</h3>
+                            <span class="position">UI Designer</span>
+                            <p class="member-bio">Design Systems & Figma</p>
                         </div>
                     </div>
 
                     <div class="team-member">
                         <div class="member-image">
-                            <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=800&q=80" 
-                                 alt="Jahid Hassan"
+                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=800&q=80" 
+                                 alt="Adrian Martinez"
                                  loading="lazy">
-                            </div>
+                        </div>
                         <div class="member-info">
-                            <h3>Jahid Hassan</h3>
-                            <span class="position">QA Lead</span>
-                            <p class="member-bio">Testing & CI/CD</p>
+                            <h3>Adrian Martinez</h3>
+                            <span class="position">Backend Developer</span>
+                            <p class="member-bio">Python & Django</p>
                         </div>
                     </div>
 
                     <div class="team-member">
                         <div class="member-image">
-                            <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=800&q=80" 
-                                 alt="Kamal Hossain"
+                            <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?w=800&q=80" 
+                                 alt="Emma Taylor"
                                  loading="lazy">
                         </div>
                         <div class="member-info">
-                            <h3>Kamal Hossain</h3>
-                            <span class="position">Security Lead</span>
-                            <p class="member-bio">Cyber Security</p>
+                            <h3>Emma Taylor</h3>
+                            <span class="position">Frontend Developer</span>
+                            <p class="member-bio">Vue.js & Nuxt</p>
+                        </div>
+                    </div>
+
+                    <div class="team-member">
+                        <div class="member-image">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=800&q=80" 
+                                 alt="David Park"
+                                 loading="lazy">
+                        </div>
+                        <div class="member-info">
+                            <h3>David Park</h3>
+                            <span class="position">Security Specialist</span>
+                            <p class="member-bio">Cybersecurity & Auditing</p>
                         </div>
                     </div>
                 </div>
@@ -969,106 +1690,346 @@
             </div>
         </div>
     </section>
-
-    <section id="contact" class="contact animate-on-scroll">
-        <div class="section-container">
-            <div class="section-header">
-                <h2>Let's Work Together</h2>
-                <p>Start your project with us and transform your digital presence</p>
-            </div>
-            
-            <div class="contact-wrapper">
-                <div class="contact-info">
-                    <div class="contact-card">
-                        <i class="fas fa-envelope"></i>
-                        <div class="card-content">
-                            <h3>Email Us</h3>
-                            <p>fspteaminfo@gmail.com</p>
-                        </div>
-                    </div>
-                    <div class="contact-card">
-                        <i class="fas fa-phone"></i>
-                        <div class="card-content">
-                            <h3>Call Us</h3>
-                            <p>+880 1816 717273</p>
-                        </div>
-                    </div>
-                    <div class="contact-card">
-                        <i class="fas fa-location-dot"></i>
-                        <div class="card-content">
-                            <h3>Visit Us</h3>
-                            <p>123 Digital Street, Tech City</p>
-                        </div>
+    </section>
+    <section class="reviews">
+        <div class="section-header">
+            <h2>Client Reviews</h2>
+            <p>What our clients say about our services</p>
+        </div>
+        <div class="review-grid">
+            <div class="review-card">
+                <div class="review-header">
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&q=80" 
+                         alt="Sarah Johnson"
+                         class="reviewer-image">
+                    <div class="reviewer-info">
+                        <h4>Sarah Johnson</h4>
+                        <p>Marketing Director</p>
                     </div>
                 </div>
+                <div class="review-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p class="review-text">"FSPTeam delivered exceptional results for our web development project. Their attention to detail and commitment to quality was impressive."</p>
+            </div>
 
-                <form class="contact-form" id="contactForm">
-                    <div class="form-row">
-                        <div class="form-group">
-                            <input type="text" id="name" name="name" class="form-control" placeholder=" " required>
-                            <label for="name">Your Name</label>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" id="email" name="email" class="form-control" placeholder=" " required>
-                            <label for="email">Your Email</label>
-                        </div>
+            <div class="review-card">
+                <div class="review-header">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&q=80" 
+                         alt="Michael Chen"
+                         class="reviewer-image">
+                    <div class="reviewer-info">
+                        <h4>Michael Chen</h4>
+                        <p>Tech Startup Founder</p>
                     </div>
-                    <div class="form-group service-select-container">
-                        <select id="service" name="service" class="form-control" required>
-                            <option value="" disabled selected>Select a Service</option>
-                            
-                            <optgroup label="Web Development">
-                                <option value="web-custom">Custom Website Development</option>
-                                <option value="web-ecommerce">E-commerce Solutions</option>
-                                <option value="web-cms">Content Management Systems</option>
-                                <option value="web-portal">Web Portal Development</option>
-                                <option value="web-api">API Development & Integration</option>
-                            </optgroup>
+                </div>
+                <div class="review-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p class="review-text">"Working with FSPTeam on our mobile app was a game-changer. Their technical expertise and innovative solutions exceeded our expectations."</p>
+            </div>
 
-                            <optgroup label="Mobile Development">
-                                <option value="mobile-ios">iOS App Development</option>
-                                <option value="mobile-android">Android App Development</option>
-                                <option value="mobile-cross">Cross-Platform Development</option>
-                                <option value="mobile-flutter">Flutter Development</option>
-                                <option value="mobile-react">React Native Development</option>
-                            </optgroup>
+            <div class="review-card">
+                <div class="review-header">
+                    <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&q=80" 
+                         alt="Emily Rodriguez"
+                         class="reviewer-image">
+                    <div class="reviewer-info">
+                        <h4>Emily Rodriguez</h4>
+                        <p>E-commerce Director</p>
+                    </div>
+                </div>
+                <div class="review-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p class="review-text">"The e-commerce solution provided by FSPTeam transformed our online presence. Our sales have increased by 200% since launch."</p>
+            </div>
 
-                            <optgroup label="UI/UX Design">
-                                <option value="design-ui">User Interface Design</option>
-                                <option value="design-ux">User Experience Design</option>
-                                <option value="design-prototype">Prototyping & Wireframing</option>
-                                <option value="design-brand">Brand Identity Design</option>
-                                <option value="design-mobile">Mobile App Design</option>
-                            </optgroup>
+            <div class="review-card">
+                <div class="review-header">
+                    <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&q=80" 
+                         alt="David Thompson"
+                         class="reviewer-image">
+                    <div class="reviewer-info">
+                        <h4>David Thompson</h4>
+                        <p>CTO, FinTech Solutions</p>
+                    </div>
+                </div>
+                <div class="review-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p class="review-text">"Their cybersecurity expertise and attention to compliance requirements made them the perfect partner for our financial software development."</p>
+            </div>
 
-                            <optgroup label="Digital Marketing">
-                                <option value="marketing-seo">Search Engine Optimization</option>
-                                <option value="marketing-social">Social Media Marketing</option>
-                                <option value="marketing-content">Content Marketing</option>
-                                <option value="marketing-email">Email Marketing</option>
-                                <option value="marketing-ppc">PPC Advertising</option>
-                            </optgroup>
+            <div class="review-card">
+                <div class="review-header">
+                    <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=150&q=80" 
+                         alt="Lisa Wang"
+                         class="reviewer-image">
+                    <div class="reviewer-info">
+                        <h4>Lisa Wang</h4>
+                        <p>Product Manager</p>
+                    </div>
+                </div>
+                <div class="review-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p class="review-text">"FSPTeam's agile approach and regular communication made the development process smooth and efficient. They delivered ahead of schedule."</p>
+            </div>
 
-                            <optgroup label="Cloud Solutions">
-                                <option value="cloud-aws">AWS Cloud Services</option>
-                                <option value="cloud-azure">Microsoft Azure</option>
-                                <option value="cloud-google">Google Cloud Platform</option>
-                                <option value="cloud-devops">DevOps Services</option>
-                                <option value="cloud-security">Cloud Security</option>
-                            </optgroup>
-                        </select>
-                        <label for="service">Choose Your Service</label>
+            <div class="review-card">
+                <div class="review-header">
+                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&q=80" 
+                         alt="Robert Martinez"
+                         class="reviewer-image">
+                    <div class="reviewer-info">
+                        <h4>Robert Martinez</h4>
+                        <p>Digital Marketing Lead</p>
+                    </div>
+                </div>
+                <div class="review-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p class="review-text">"The SEO optimization and performance improvements they implemented resulted in a 150% increase in our organic traffic."</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="recognition">
+        <div class="section-header">
+            <h2>Industry Recognition</h2>
+            <p>Awards and certifications that validate our expertise</p>
+        </div>
+        <div class="recognition-grid">
+            <div class="recognition-item">
+                <div class="recognition-icon">
+                    <i class="fas fa-trophy"></i>
+                </div>
+                <h4 class="recognition-title">Best Web Development Company</h4>
+                <p class="recognition-year">2023</p>
+            </div>
+            
+            <div class="recognition-item">
+                <div class="recognition-icon">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <h4 class="recognition-title">Innovation in Mobile Apps</h4>
+                <p class="recognition-year">2023</p>
+            </div>
+
+            <div class="recognition-item">
+                <div class="recognition-icon">
+                    <i class="fas fa-palette"></i>
+                </div>
+                <h4 class="recognition-title">Excellence in UI/UX Design</h4>
+                <p class="recognition-year">2022</p>
+            </div>
+
+            <div class="recognition-item">
+                <div class="recognition-icon">
+                    <i class="fas fa-award"></i>
+                </div>
+                <h4 class="recognition-title">Top Digital Solutions Provider</h4>
+                <p class="recognition-year">2022</p>
+            </div>
+        </div>
+    </section>
+
+<section id="stats" class="stats">
+    <div class="section-header">
+        <h2>Our Achievements</h2>
+        <p>Milestones that define our journey of excellence</p>
+    </div>
+    <div class="stats-grid">
+        <div class="stat-item">
+            <div class="stat-icon">
+                <i class="fas fa-project-diagram"></i>
+            </div>
+            <div class="stat-content">
+                <div class="stat-number" data-target="500">0</div>
+                <div class="stat-label">Projects Completed</div>
+            </div>
+        </div>
+        
+        <div class="stat-item">
+            <div class="stat-icon">
+                <i class="fas fa-users"></i>
+            </div>
+            <div class="stat-content">
+                <div class="stat-number" data-target="200">0</div>
+                <div class="stat-label">Happy Clients</div>
+            </div>
+        </div>
+        
+        <div class="stat-item">
+            <div class="stat-icon">
+                <i class="fas fa-globe"></i>
+            </div>
+            <div class="stat-content">
+                <div class="stat-number" data-target="25">0</div>
+                <div class="stat-label">Countries Served</div>
+            </div>
+        </div>
+        
+        <div class="stat-item">
+            <div class="stat-icon">
+                <i class="fas fa-code-branch"></i>
+            </div>
+            <div class="stat-content">
+                <div class="stat-number" data-target="1000">0</div>
+                <div class="stat-label">Code Commits</div>
+            </div>
+        </div>
+        
+        <div class="stat-item">
+            <div class="stat-icon">
+                <i class="fas fa-award"></i>
+            </div>
+            <div class="stat-content">
+                <div class="stat-number" data-target="15">0</div>
+                <div class="stat-label">Industry Awards</div>
+            </div>
+        </div>
+        
+        <div class="stat-item">
+            <div class="stat-icon">
+                <i class="fas fa-clock"></i>
+            </div>
+            <div class="stat-content">
+                <div class="stat-number" data-target="10">0</div>
+                <div class="stat-label">Years Experience</div>
+            </div>
+        </div>
+    </div>
+</section>
+    <section id="contact" class="contact">
+        <div class="section-header">
+            <h2>Let's Work Together</h2>
+            <p>Start your digital journey with us today</p>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-card">
+                    <i class="fas fa-envelope"></i>
+                    <div class="card-content">
+                        <h3>Email Us</h3>
+                        <p>fspteaminfo@gmail.com</p>
+                    </div>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-phone"></i>
+                    <div class="card-content">
+                        <h3>Call Us</h3>
+                        <p>+880 1816 717273</p>
+                    </div>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-location-dot"></i>
+                    <div class="card-content">
+                        <h3>Visit Us</h3>
+                        <p>123 Digital Street, Tech City</p>
+                    </div>
+                </div>
+            </div>
+
+            <form class="contact-form" id="contactForm" action="https://formspree.io/f/xpwpzgaq" method="POST">
+                <div class="form-row">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" class="form-control" placeholder=" " required>
+                        <label for="name">Your Name</label>
                     </div>
                     <div class="form-group">
-                        <textarea id="message" name="message" class="form-control" placeholder=" " rows="4" required></textarea>
-                        <label for="message">Your Message</label>
+                        <input type="email" id="email" name="email" class="form-control" placeholder=" " required>
+                        <label for="email">Your Email</label>
                     </div>
-                    <button type="submit" class="submit-button">
-                        <span>Send Message</span>
-                        <i class="fas fa-paper-plane"></i>
-                    </button>
-                </form>
-            </div>
+                </div>
+                <div class="form-group service-select-container">
+                    <select id="service" name="service" class="form-control" required>
+                        <option value="" disabled selected>Select a Service</option>
+                        
+                        <optgroup label="Web Development">
+                            <option value="web-custom">Custom Website Development</option>
+                            <option value="web-ecommerce">E-commerce Solutions</option>
+                            <option value="web-cms">Content Management Systems</option>
+                            <option value="web-portal">Web Portal Development</option>
+                            <option value="web-api">API Development & Integration</option>
+                        </optgroup>
+
+                        <optgroup label="Mobile Development">
+                            <option value="mobile-ios">iOS App Development</option>
+                            <option value="mobile-android">Android App Development</option>
+                            <option value="mobile-cross">Cross-Platform Development</option>
+                            <option value="mobile-flutter">Flutter Development</option>
+                            <option value="mobile-react">React Native Development</option>
+                        </optgroup>
+
+                        <optgroup label="UI/UX Design">
+                            <option value="design-ui">User Interface Design</option>
+                            <option value="design-ux">User Experience Design</option>
+                            <option value="design-prototype">Prototyping & Wireframing</option>
+                            <option value="design-brand">Brand Identity Design</option>
+                            <option value="design-mobile">Mobile App Design</option>
+                        </optgroup>
+
+                        <optgroup label="Graphics Design">
+                            <option value="graphics-brand">Brand Identity & Logos</option>
+                            <option value="graphics-print">Print Design</option>
+                            <option value="graphics-social">Social Media Graphics</option>
+                            <option value="graphics-marketing">Marketing Materials</option>
+                            <option value="graphics-illustration">Custom Illustrations</option>
+                        </optgroup>
+
+                        <optgroup label="Digital Marketing">
+                            <option value="marketing-seo">Search Engine Optimization</option>
+                            <option value="marketing-social">Social Media Marketing</option>
+                            <option value="marketing-content">Content Marketing</option>
+                            <option value="marketing-email">Email Marketing</option>
+                            <option value="marketing-ppc">PPC Advertising</option>
+                        </optgroup>
+
+                        <optgroup label="Cloud Solutions">
+                            <option value="cloud-aws">AWS Cloud Services</option>
+                            <option value="cloud-azure">Microsoft Azure</option>
+                            <option value="cloud-google">Google Cloud Platform</option>
+                            <option value="cloud-devops">DevOps Services</option>
+                            <option value="cloud-security">Cloud Security</option>
+                        </optgroup>
+                    </select>
+                    <label for="service">Choose Your Service</label>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" class="form-control" placeholder=" " rows="4" required></textarea>
+                    <label for="message">Your Message</label>
+                </div>
+                <button type="submit" class="submit-button">
+                    <span>Send Message</span>
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </form>
         </div>
     </section>
 
@@ -1143,12 +2104,8 @@
             <p>&copy; 2024 FSPTeam. All rights reserved.</p>
             </div>
         </div>
-    </footer>
+        </footer>
 
-    <button class="scroll-to-top" aria-label="Scroll to top">
-        <i class="fas fa-arrow-up"></i>
-    </button>
-
-    <script src="script.js"></script>
+        <script src="script.js"></script>
 </body>
-</html> 
+</html>

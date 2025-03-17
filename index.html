@@ -20,133 +20,133 @@
         </defs>
     </svg>
 
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="logo">
-                <img src="logo.png" alt="FSPTEAM Logo" style="height: 100px; width: auto;">
-                <span class="logo-text">FSP<span class="logo-highlight">TEAM</span></span>
-            </div>
-            
-            <button class="menu-toggle" aria-label="Toggle navigation">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#work">Work</a></li>
-                <li><a href="#team">Team</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <div class="hero-text">
-                <div class="brand-name">
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <!-- Logo Section -->
+                <a href="index.html" class="logo">
+                    <img src="assets/logo.png" alt="FSP Team Logo">
                     <span class="logo-text">FSP<span class="logo-highlight">TEAM</span></span>
+                </a>
+
+                <!-- Navigation Links -->
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+
+                <!-- Mobile Menu Button -->
+                <button class="menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero/Home Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <!-- Left side - Text content -->
+            <div class="hero-text">
+                <div class="hero-badge">
+                    <i class="fas fa-star"></i>
+                    <span>Trusted by 500+ Businesses</span>
                 </div>
+                
+                <h1 class="brand-name">
+                    <span class="highlight">FSPTEAM</span>
+                    <div class="tagline">Transform Your Digital Presence</div>
+                </h1>
+                
                 <p class="hero-description">
-                    Transforming ideas into digital excellence with innovative design and development solutions
+                    Innovative solutions for web development, mobile apps, design, and digital marketing. Let's create something amazing together.
                 </p>
-                <div class="service-highlights">
-                    <div class="highlight-item">
-                        <i class="fas fa-palette"></i>
-                        <span>Creative Design Solutions</span>
-                    </div>
-                    <div class="highlight-item">
-                        <i class="fas fa-code"></i>
-                        <span>Custom Web Development</span>
-                    </div>
-                    <div class="highlight-item">
-                        <i class="fas fa-chart-line"></i>
-                        <span>Digital Marketing Strategy</span>
-                    </div>
+
+                <div class="hero-cta">
+                    <a href="#contact" class="primary-btn">
+                        Get Started
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#services" class="secondary-btn">
+                        Our Services
+                        <i class="fas fa-th"></i>
+                    </a>
                 </div>
             </div>
-            
-            <div class="hero-right">
-                <div class="hero-image-container">
-                    <div class="hero-image main">
-                        <img src="https://images.unsplash.com/photo-1552581234-26160f608093?w=800&q=80" 
-                             alt="Team Collaboration"
-                             loading="lazy">
-                    </div>
-                    <div class="hero-image secondary">
-                        <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&q=80" 
-                             alt="Digital Design"
-                             loading="lazy">
-                    </div>
-                    
-                    <div class="floating-card top">
-                        <i class="fas fa-chart-line"></i>
-                        <div class="floating-card-content">
-                            <span class="floating-card-title">98% Growth</span>
-                            <span class="floating-card-subtitle">Year over Year</span>
-                        </div>
-                    </div>
-                    
-                    <div class="floating-card bottom">
-                        <i class="fas fa-star"></i>
-                        <div class="floating-card-content">
-                            <span class="floating-card-title">5.0 Rating</span>
-                            <span class="floating-card-subtitle">Client Satisfaction</span>
-                        </div>
-                    </div>
 
-                    <div class="hero-shape"></div>
+            <!-- Right side - Image with social icons -->
+            <div class="hero-image">
+                <div class="image-container">
+                    <div class="circle-background"></div>
+                    <img src="./assets/hero-image.png" 
+                         alt="Professional with Laptop"
+                         loading="eager"
+                         decoding="async"
+                         fetchpriority="high">
+                    
+                    <!-- Social Icons -->
+                    <div class="social-icons-circle">
+                        <a href="#" class="icon facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="icon youtube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="#" class="icon instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="icon twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="icon tiktok">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="certifications" class="certifications">
-        <div class="section-header">
-            <h2>Our Certifications</h2>
-            <p>Professional standards and industry recognition</p>
-        </div>
-        <div class="cert-grid">
-            <div class="cert-item">
-                <div class="cert-icon">
+    <!-- Certifications Section -->
+    <section class="certifications" id="certifications">
+        <div class="certifications-grid">
+            <!-- ISO 27001 -->
+            <div class="certification-card">
+                <div class="certification-icon">
                     <i class="fas fa-shield-alt"></i>
                 </div>
-                <h3 class="cert-title">Licensed & Insured</h3>
-                <p class="cert-subtitle">Full coverage for your peace of mind</p>
-            </div>
-            
-            <div class="cert-item">
-                <div class="cert-icon">
-                    <i class="fas fa-history"></i>
+                <div class="certification-content">
+                    <h3 class="certification-title">ISO 27001</h3>
+                    <p class="certification-description">Security Management</p>
                 </div>
-                <h3 class="cert-title">10+ Years Experience</h3>
-                <p class="cert-subtitle">Proven track record of excellence</p>
             </div>
-            
-            <div class="cert-item">
-                <div class="cert-icon">
-                    <i class="fas fa-certificate"></i>
+
+            <!-- GDPR -->
+            <div class="certification-card">
+                <div class="certification-icon">
+                    <i class="fas fa-lock"></i>
                 </div>
-                <h3 class="cert-title">Certified Experts</h3>
-                <p class="cert-subtitle">Industry-leading professionals</p>
+                <div class="certification-content">
+                    <h3 class="certification-title">GDPR</h3>
+                    <p class="certification-description">Data Protection</p>
+                </div>
             </div>
-            
-            <div class="cert-item">
-                <div class="cert-icon">
-                    <i class="fas fa-award"></i>
+
+            <!-- PCI DSS -->
+            <div class="certification-card">
+                <div class="certification-icon">
+                    <i class="fas fa-credit-card"></i>
                 </div>
-                <h3 class="cert-title">ISO 9001:2015</h3>
-                <p class="cert-subtitle">Quality Management System</p>
-            </div>
-            
-            <div class="cert-item">
-                <div class="cert-icon">
-                    <i class="fas fa-check-circle"></i>
+                <div class="certification-content">
+                    <h3 class="certification-title">PCI DSS</h3>
+                    <p class="certification-description">Payment Security</p>
                 </div>
-                <h3 class="cert-title">OHSAS 18001</h3>
-                <p class="cert-subtitle">Occupational Health & Safety</p>
             </div>
         </div>
     </section>
@@ -220,10 +220,11 @@
     <section id="pricing" class="pricing">
         <div class="section-container">
             <div class="section-header">
+                
                 <h2>Pricing Plans</h2>
                 <p>Choose the perfect package for your business needs</p>
             </div>
-            
+
             <div class="pricing-tabs">
                 <button class="tab-btn active" data-category="marketing">Digital Marketing</button>
                 <button class="tab-btn" data-category="graphics">Graphics Design</button>
@@ -233,108 +234,143 @@
                 <button class="tab-btn" data-category="security">Cybersecurity</button>
             </div>
 
+            
+
             <div class="pricing-container">
                 <!-- Digital Marketing Plans -->
                 <div class="pricing-category active" data-category="marketing">
                     <div class="pricing-grid">
                         <!-- Starter Package -->
                         <div class="pricing-plan">
+                            <div class="plan-tag">Most Popular</div>
                             <div class="plan-header">
-                                <span class="plan-category">Digital Marketing</span>
+                                <div class="plan-category">DIGITAL MARKETING</div>
                                 <h3 class="plan-name">Starter Package</h3>
-                                <div class="plan-price">$599<span>/month</span></div>
+                                <div class="plan-price">
+                                    <span class="currency">$</span>
+                                    <span class="amount">599</span>
+                                    <span class="period">/month</span>
+                                </div>
                             </div>
                             <ul class="plan-features">
-                                <li class="included"><i class="fas fa-check"></i>Social Media Management (2 Platforms)</li>
-                                <li class="included"><i class="fas fa-check"></i>4 Social Posts per Week</li>
-                                <li class="included"><i class="fas fa-check"></i>Basic SEO Setup</li>
-                                <li class="included"><i class="fas fa-check"></i>Google Analytics Setup</li>
-                                <li class="included"><i class="fas fa-check"></i>Monthly Performance Report</li>
-                                <li class="included"><i class="fas fa-check"></i>Basic Keyword Research</li>
-                                <li class="included"><i class="fas fa-check"></i>Social Media Content Calendar</li>
-                                <li class="included"><i class="fas fa-check"></i>Basic Competitor Analysis</li>
+                                <li>
+                                    <i class="fas fa-check"></i>
+                                    <div class="feature-content">
+                                        <div class="feature-main">Social Media Management</div>
+                                        <div class="feature-sub">(3 Platforms)</div>
+                                        <div class="feature-description">Facebook, Instagram, Twitter or LinkedIn</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fas fa-check"></i>
+                                    <div class="feature-content">
+                                        <div class="feature-main">8 Social Posts per Week</div>
+                                        <div class="feature-description">Engaging content with graphics</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fas fa-check"></i>
+                                    <div class="feature-content">
+                                        <div class="feature-main">Essential SEO Setup</div>
+                                        <div class="feature-description">Basic on-page optimization</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fas fa-check"></i>
+                                    <div class="feature-content">
+                                        <div class="feature-main">Google Analytics Integration</div>
+                                        <div class="feature-description">Basic traffic monitoring</div>
+                                    </div>
+                                </li>
                             </ul>
-                            <a href="#contact" class="plan-button">Get Started</a>
-                        </div>
-
-                        <!-- Growth Package -->
-                        <div class="pricing-plan popular">
-                            <div class="plan-header">
-                                <span class="plan-category">Digital Marketing</span>
-                                <h3 class="plan-name">Growth Package</h3>
-                                <div class="plan-price">$1,299<span>/month</span></div>
+                            <div class="plan-button">
+                                <span data-service="marketing-starter" data-price="599" data-period="month">Get Started</span>
+                                <i class="fas fa-arrow-right"></i>
                             </div>
-                            <ul class="plan-features">
-                                <li class="included"><i class="fas fa-check"></i>Social Media (4 Platforms)</li>
-                                <li class="included"><i class="fas fa-check"></i>Daily Social Posts</li>
-                                <li class="included"><i class="fas fa-check"></i>Advanced SEO Optimization</li>
-                                <li class="included"><i class="fas fa-check"></i>Content Creation (4 Blog Posts)</li>
-                                <li class="included"><i class="fas fa-check"></i>Email Marketing Campaigns</li>
-                                <li class="included"><i class="fas fa-check"></i>Google Ads Management ($500 Budget)</li>
-                                <li class="included"><i class="fas fa-check"></i>Bi-weekly Strategy Calls</li>
-                                <li class="included"><i class="fas fa-check"></i>Monthly Analytics Reports</li>
-                            </ul>
-                            <a href="#contact" class="plan-button">Get Started</a>
                         </div>
 
                         <!-- Professional Package -->
-                        <div class="pricing-plan">
-                            <div class="plan-header">
-                                <span class="plan-category">Digital Marketing</span>
-                                <h3 class="plan-name">Professional Package</h3>
-                                <div class="plan-price">$2,499<span>/month</span></div>
-                            </div>
+                        <div class="pricing-plan featured">
+                            <div class="plan-tag">Best Value</div>
+                            <div class="plan-category">DIGITAL MARKETING</div>
+                            <h3 class="plan-name">Professional Package</h3>
+                            <div class="plan-price">$999<span>/month</span></div>
                             <ul class="plan-features">
-                                <li class="included"><i class="fas fa-check"></i>All Social Media Platforms</li>
-                                <li class="included"><i class="fas fa-check"></i>Premium Content Creation (8 Blog Posts)</li>
-                                <li class="included"><i class="fas fa-check"></i>Complete SEO Management</li>
-                                <li class="included"><i class="fas fa-check"></i>Full PPC Campaign Management</li>
-                                <li class="included"><i class="fas fa-check"></i>Marketing Automation Setup</li>
-                                <li class="included"><i class="fas fa-check"></i>Lead Generation Campaigns</li>
-                                <li class="included"><i class="fas fa-check"></i>Weekly Strategy Calls</li>
-                                <li class="included"><i class="fas fa-check"></i>Custom Analytics Dashboard</li>
+                                <li>
+                                    <i class="fas fa-check"></i>
+                                    <div class="feature-content">
+                                        <div class="feature-main">Social Media Management (5 Platforms)</div>
+                                        <div class="feature-description">All major platforms covered</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fas fa-check"></i>
+                                    <div class="feature-content">
+                                        <div class="feature-main">15 Social Posts per Week</div>
+                                        <div class="feature-description">Premium content with custom graphics</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fas fa-check"></i>
+                                    <div class="feature-content">
+                                        <div class="feature-main">Advanced SEO Optimization</div>
+                                        <div class="feature-description">Complete on-page and technical SEO</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fas fa-check"></i>
+                                    <div class="feature-content">
+                                        <div class="feature-main">Social Media Advertising</div>
+                                        <div class="feature-description">$500 ad spend management</div>
+                                    </div>
+                                </li>
                             </ul>
-                            <a href="#contact" class="plan-button">Get Started</a>
-                        </div>
-
-                        <!-- E-commerce Package -->
-                        <div class="pricing-plan">
-                            <div class="plan-header">
-                                <span class="plan-category">Digital Marketing</span>
-                                <h3 class="plan-name">E-commerce Package</h3>
-                                <div class="plan-price">$3,499<span>/month</span></div>
+                            <div class="plan-button">
+                                <span data-service="marketing-professional" data-price="999" data-period="month">Get Started</span>
+                                <i class="fas fa-arrow-right"></i>
                             </div>
-                            <ul class="plan-features">
-                                <li class="included"><i class="fas fa-check"></i>Full E-commerce Marketing Suite</li>
-                                <li class="included"><i class="fas fa-check"></i>Shopping Feed Optimization</li>
-                                <li class="included"><i class="fas fa-check"></i>Product Listing Ads Management</li>
-                                <li class="included"><i class="fas fa-check"></i>Conversion Rate Optimization</li>
-                                <li class="included"><i class="fas fa-check"></i>Abandoned Cart Recovery</li>
-                                <li class="included"><i class="fas fa-check"></i>Email Marketing Automation</li>
-                                <li class="included"><i class="fas fa-check"></i>Marketplace Management</li>
-                                <li class="included"><i class="fas fa-check"></i>ROI Tracking & Reporting</li>
-                            </ul>
-                            <a href="#contact" class="plan-button">Get Started</a>
                         </div>
 
                         <!-- Enterprise Package -->
                         <div class="pricing-plan">
-                            <div class="plan-header">
-                                <span class="plan-category">Digital Marketing</span>
-                                <h3 class="plan-name">Enterprise Package</h3>
-                                <div class="plan-price">$4,999<span>/month</span></div>
-                            </div>
+                            <div class="plan-tag">Most Features</div>
+                            <div class="plan-category">DIGITAL MARKETING</div>
+                            <h3 class="plan-name">Enterprise Package</h3>
+                            <div class="plan-price">$1,999<span>/month</span></div>
                             <ul class="plan-features">
-                                <li class="included"><i class="fas fa-check"></i>Custom Marketing Strategy</li>
-                                <li class="included"><i class="fas fa-check"></i>Multi-channel Campaign Management</li>
-                                <li class="included"><i class="fas fa-check"></i>Advanced Analytics & AI Insights</li>
-                                <li class="included"><i class="fas fa-check"></i>Brand Reputation Management</li>
-                                <li class="included"><i class="fas fa-check"></i>Influencer Marketing Campaigns</li>
-                                <li class="included"><i class="fas fa-check"></i>Video Marketing Production</li>
-                                <li class="included"><i class="fas fa-check"></i>Dedicated Marketing Team</li>
-                                <li class="included"><i class="fas fa-check"></i>24/7 Priority Support</li>
+                                <li>
+                                    <i class="fas fa-check"></i>
+                                    <div class="feature-content">
+                                        <div class="feature-main">Unlimited Social Media Management</div>
+                                        <div class="feature-description">All platforms with dedicated manager</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fas fa-check"></i>
+                                    <div class="feature-content">
+                                        <div class="feature-main">25+ Social Posts per Week</div>
+                                        <div class="feature-description">Premium content with video</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fas fa-check"></i>
+                                    <div class="feature-content">
+                                        <div class="feature-main">Custom Marketing Strategy</div>
+                                        <div class="feature-description">Tailored to your business goals</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fas fa-check"></i>
+                                    <div class="feature-content">
+                                        <div class="feature-main">Full Advertising Suite</div>
+                                        <div class="feature-description">Google Ads & Social Media Ads</div>
+                                    </div>
+                                </li>
                             </ul>
-                            <a href="#contact" class="plan-button">Get Started</a>
+                            <div class="plan-button">
+                                <span data-service="marketing-enterprise" data-price="1999" data-period="month">Get Started</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -342,104 +378,152 @@
                 <!-- Graphics Design Plans -->
                 <div class="pricing-category" data-category="graphics">
                     <div class="pricing-grid">
-                        <!-- Basic Graphics Package -->
+                        <!-- Basic Package -->
                         <div class="pricing-plan">
+                            <div class="plan-tag">Most Popular</div>
                             <div class="plan-header">
-                                <span class="plan-category">Graphics Design</span>
+                                <div class="plan-category">GRAPHICS DESIGN</div>
                                 <h3 class="plan-name">Basic Package</h3>
-                                <div class="plan-price">$299<span>/package</span></div>
+                                <div class="plan-price">
+                                    <span class="currency">$</span>
+                                    <span class="amount">299</span>
+                                    <span class="period">/package</span>
+                                </div>
                             </div>
                             <ul class="plan-features">
-                                <li class="included"><i class="fas fa-check"></i>Logo Design (2 Concepts)</li>
-                                <li class="included"><i class="fas fa-check"></i>Business Card Design</li>
-                                <li class="included"><i class="fas fa-check"></i>Social Media Kit (3 Templates)</li>
-                                <li class="included"><i class="fas fa-check"></i>Source Files</li>
-                                <li class="included"><i class="fas fa-check"></i>2 Revisions</li>
-                                <li class="included"><i class="fas fa-check"></i>3 Days Delivery</li>
-                                <li class="not-included"><i class="fas fa-times"></i>Brand Guidelines</li>
-                                <li class="not-included"><i class="fas fa-times"></i>Marketing Materials</li>
+                                <li>
+                                    <i class="fas fa-check"></i>
+                                    <div class="feature-content">
+                                        <div class="feature-main">Logo Design</div>
+                                        <div class="feature-sub">(2 Concepts)</div>
+                                        <div class="feature-description">Professional and unique designs</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fas fa-check"></i>
+                                    <div class="feature-content">
+                                        <div class="feature-main">Business Card Design</div>
+                                        <div class="feature-description">Modern and professional layout</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fas fa-check"></i>
+                                    <div class="feature-content">
+                                        <div class="feature-main">Social Media Kit</div>
+                                        <div class="feature-sub">(3 Templates)</div>
+                                        <div class="feature-description">Engaging social media designs</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fas fa-check"></i>
+                                    <div class="feature-content">
+                                        <div class="feature-main">Source Files</div>
+                                        <div class="feature-description">Editable design files included</div>
+                                    </div>
+                                </li>
                             </ul>
-                            <a href="#contact" class="plan-button">Get Started</a>
+                            <div class="plan-button">
+                                <span data-service="graphics-brand" data-price="299" data-period="package">Get Started</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
                         </div>
 
-                        <!-- Professional Graphics Package -->
-                        <div class="pricing-plan">
+                        <!-- Professional Package -->
+                        <div class="pricing-plan featured">
+                            <div class="plan-tag">Best Value</div>
                             <div class="plan-header">
-                                <span class="plan-category">Graphics Design</span>
+                                <div class="plan-category">GRAPHICS DESIGN</div>
                                 <h3 class="plan-name">Professional Package</h3>
-                                <div class="plan-price">$599<span>/package</span></div>
+                                <div class="plan-price">
+                                    <span class="currency">$</span>
+                                    <span class="amount">599</span>
+                                    <span class="period">/package</span>
+                                </div>
                             </div>
                             <ul class="plan-features">
-                                <li class="included"><i class="fas fa-check"></i>Logo Design (4 Concepts)</li>
-                                <li class="included"><i class="fas fa-check"></i>Complete Stationery Design</li>
-                                <li class="included"><i class="fas fa-check"></i>Social Media Kit (8 Templates)</li>
-                                <li class="included"><i class="fas fa-check"></i>Facebook Cover & Profile</li>
-                                <li class="included"><i class="fas fa-check"></i>Basic Brand Guidelines</li>
-                                <li class="included"><i class="fas fa-check"></i>4 Revisions</li>
-                                <li class="included"><i class="fas fa-check"></i>5 Days Delivery</li>
-                                <li class="included"><i class="fas fa-check"></i>1 Month Support</li>
+                                <li>
+                                    <i class="fas fa-check"></i>
+                                    <div class="feature-content">
+                                        <div class="feature-main">Logo Design</div>
+                                        <div class="feature-sub">(4 Concepts)</div>
+                                        <div class="feature-description">Premium quality designs</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fas fa-check"></i>
+                                    <div class="feature-content">
+                                        <div class="feature-main">Complete Stationery Design</div>
+                                        <div class="feature-description">Business cards, letterhead & envelopes</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fas fa-check"></i>
+                                    <div class="feature-content">
+                                        <div class="feature-main">Social Media Kit</div>
+                                        <div class="feature-sub">(8 Templates)</div>
+                                        <div class="feature-description">Comprehensive social media package</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fas fa-check"></i>
+                                    <div class="feature-content">
+                                        <div class="feature-main">Brand Guidelines</div>
+                                        <div class="feature-description">Basic brand style guide</div>
+                                    </div>
+                                </li>
                             </ul>
-                            <a href="#contact" class="plan-button">Get Started</a>
-                        </div>
-
-                        <!-- Business Graphics Package -->
-                        <div class="pricing-plan popular">
-                            <div class="plan-header">
-                                <span class="plan-category">Graphics Design</span>
-                                <h3 class="plan-name">Business Package</h3>
-                                <div class="plan-price">$999<span>/package</span></div>
+                            <div class="plan-button">
+                                <span data-service="graphics-brand" data-price="599" data-period="package">Get Started</span>
+                                <i class="fas fa-arrow-right"></i>
                             </div>
-                            <ul class="plan-features">
-                                <li class="included"><i class="fas fa-check"></i>Logo Design (Unlimited Concepts)</li>
-                                <li class="included"><i class="fas fa-check"></i>Complete Brand Identity</li>
-                                <li class="included"><i class="fas fa-check"></i>Social Media Kit (15 Templates)</li>
-                                <li class="included"><i class="fas fa-check"></i>All Social Media Assets</li>
-                                <li class="included"><i class="fas fa-check"></i>Marketing Materials</li>
-                                <li class="included"><i class="fas fa-check"></i>Comprehensive Brand Guide</li>
-                                <li class="included"><i class="fas fa-check"></i>Unlimited Revisions</li>
-                                <li class="included"><i class="fas fa-check"></i>Priority Support</li>
-                            </ul>
-                            <a href="#contact" class="plan-button">Get Started</a>
                         </div>
 
-                        <!-- Enterprise Graphics Package -->
+                        <!-- Enterprise Package -->
                         <div class="pricing-plan">
+                            <div class="plan-tag">Most Features</div>
                             <div class="plan-header">
-                                <span class="plan-category">Graphics Design</span>
+                                <div class="plan-category">GRAPHICS DESIGN</div>
                                 <h3 class="plan-name">Enterprise Package</h3>
-                                <div class="plan-price">$1,499<span>/package</span></div>
+                                <div class="plan-price">
+                                    <span class="currency">$</span>
+                                    <span class="amount">1,499</span>
+                                    <span class="period">/package</span>
+                                </div>
                             </div>
                             <ul class="plan-features">
-                                <li class="included"><i class="fas fa-check"></i>Complete Brand Identity Suite</li>
-                                <li class="included"><i class="fas fa-check"></i>Custom Illustration Design</li>
-                                <li class="included"><i class="fas fa-check"></i>Product Packaging Design</li>
-                                <li class="included"><i class="fas fa-check"></i>Print & Digital Marketing Kit</li>
-                                <li class="included"><i class="fas fa-check"></i>Motion Graphics & Animations</li>
-                                <li class="included"><i class="fas fa-check"></i>Brand Strategy Guide</li>
-                                <li class="included"><i class="fas fa-check"></i>Dedicated Designer</li>
-                                <li class="included"><i class="fas fa-check"></i>3 Months Support</li>
+                                <li>
+                                    <i class="fas fa-check"></i>
+                                    <div class="feature-content">
+                                        <div class="feature-main">Complete Brand Identity Suite</div>
+                                        <div class="feature-description">Full branding package</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fas fa-check"></i>
+                                    <div class="feature-content">
+                                        <div class="feature-main">Custom Illustration Design</div>
+                                        <div class="feature-description">Unique custom illustrations</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fas fa-check"></i>
+                                    <div class="feature-content">
+                                        <div class="feature-main">Product Packaging Design</div>
+                                        <div class="feature-description">Professional packaging solutions</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fas fa-check"></i>
+                                    <div class="feature-content">
+                                        <div class="feature-main">Print & Digital Marketing Kit</div>
+                                        <div class="feature-description">Comprehensive marketing materials</div>
+                                    </div>
+                                </li>
                             </ul>
-                            <a href="#contact" class="plan-button">Get Started</a>
-                        </div>
-
-                        <!-- Monthly Retainer Package -->
-                        <div class="pricing-plan">
-                            <div class="plan-header">
-                                <span class="plan-category">Graphics Design</span>
-                                <h3 class="plan-name">Monthly Retainer</h3>
-                                <div class="plan-price">$799<span>/month</span></div>
+                            <div class="plan-button">
+                                <span data-service="graphics-brand" data-price="1499" data-period="package">Get Started</span>
+                                <i class="fas fa-arrow-right"></i>
                             </div>
-                            <ul class="plan-features">
-                                <li class="included"><i class="fas fa-check"></i>10 Design Requests Monthly</li>
-                                <li class="included"><i class="fas fa-check"></i>Social Media Graphics</li>
-                                <li class="included"><i class="fas fa-check"></i>Marketing Materials</li>
-                                <li class="included"><i class="fas fa-check"></i>Blog & Email Graphics</li>
-                                <li class="included"><i class="fas fa-check"></i>Quick 24-48h Delivery</li>
-                                <li class="included"><i class="fas fa-check"></i>Unlimited Revisions</li>
-                                <li class="included"><i class="fas fa-check"></i>Dedicated Designer</li>
-                                <li class="included"><i class="fas fa-check"></i>Monthly Strategy Call</li>
-                            </ul>
-                            <a href="#contact" class="plan-button">Get Started</a>
                         </div>
                     </div>
                 </div>
@@ -447,104 +531,152 @@
                 <!-- UI/UX Design Plans -->
                 <div class="pricing-category" data-category="uiux">
                     <div class="pricing-grid">
-                        <!-- Starter UI/UX Package -->
+                        <!-- Basic Package -->
                         <div class="pricing-plan">
+                            <div class="plan-tag">Most Popular</div>
                             <div class="plan-header">
-                                <span class="plan-category">UI/UX Design</span>
-                                <h3 class="plan-name">Starter Package</h3>
-                                <div class="plan-price">$1,499<span>/project</span></div>
+                                <div class="plan-category">UI/UX DESIGN</div>
+                                <h3 class="plan-name">Basic Package</h3>
+                                <div class="plan-price">
+                                    <span class="currency">$</span>
+                                    <span class="amount">799</span>
+                                    <span class="period">/project</span>
+                                </div>
                             </div>
                             <ul class="plan-features">
-                                <li class="included"><i class="fas fa-check"></i>5 Key Screen Designs</li>
-                                <li class="included"><i class="fas fa-check"></i>User Flow Diagram</li>
-                                <li class="included"><i class="fas fa-check"></i>Wireframe Design</li>
-                                <li class="included"><i class="fas fa-check"></i>Basic Interactive Prototype</li>
-                                <li class="included"><i class="fas fa-check"></i>Mobile-First Approach</li>
-                                <li class="included"><i class="fas fa-check"></i>Source Files (Figma/XD)</li>
-                                <li class="included"><i class="fas fa-check"></i>2 Revision Rounds</li>
-                                <li class="not-included"><i class="fas fa-times"></i>User Research</li>
+                                <li>
+                                    <i class="fas fa-check"></i>
+                                    <div class="feature-content">
+                                        <div class="feature-main">User Research</div>
+                                        <div class="feature-sub">(5 User Interviews)</div>
+                                        <div class="feature-description">Basic user insights and personas</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fas fa-check"></i>
+                                    <div class="feature-content">
+                                        <div class="feature-main">UI Design</div>
+                                        <div class="feature-sub">(5 Key Screens)</div>
+                                        <div class="feature-description">Modern and intuitive interface</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fas fa-check"></i>
+                                    <div class="feature-content">
+                                        <div class="feature-main">Wireframing</div>
+                                        <div class="feature-description">Low-fidelity prototypes</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fas fa-check"></i>
+                                    <div class="feature-content">
+                                        <div class="feature-main">Basic Design System</div>
+                                        <div class="feature-description">Core UI components</div>
+                                    </div>
+                                </li>
                             </ul>
-                            <a href="#contact" class="plan-button">Get Started</a>
+                            <div class="plan-button">
+                                <span data-service="design-ui" data-price="799" data-period="project">Get Started</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
                         </div>
 
-                        <!-- Professional UI/UX Package -->
-                        <div class="pricing-plan popular">
+                        <!-- Professional Package -->
+                        <div class="pricing-plan featured">
+                            <div class="plan-tag">Best Value</div>
                             <div class="plan-header">
-                                <span class="plan-category">UI/UX Design</span>
+                                <div class="plan-category">UI/UX DESIGN</div>
                                 <h3 class="plan-name">Professional Package</h3>
-                                <div class="plan-price">$2,999<span>/project</span></div>
+                                <div class="plan-price">
+                                    <span class="currency">$</span>
+                                    <span class="amount">1,499</span>
+                                    <span class="period">/project</span>
+                                </div>
                             </div>
                             <ul class="plan-features">
-                                <li class="included"><i class="fas fa-check"></i>10-12 Core Screen Designs</li>
-                                <li class="included"><i class="fas fa-check"></i>User Research & Analysis</li>
-                                <li class="included"><i class="fas fa-check"></i>Information Architecture</li>
-                                <li class="included"><i class="fas fa-check"></i>Detailed Wireframes</li>
-                                <li class="included"><i class="fas fa-check"></i>Advanced Interactive Prototype</li>
-                                <li class="included"><i class="fas fa-check"></i>Design System Creation</li>
-                                <li class="included"><i class="fas fa-check"></i>Responsive Design (All Devices)</li>
-                                <li class="included"><i class="fas fa-check"></i>4 Revision Rounds</li>
+                                <li>
+                                    <i class="fas fa-check"></i>
+                                    <div class="feature-content">
+                                        <div class="feature-main">Comprehensive Research</div>
+                                        <div class="feature-sub">(15 User Interviews)</div>
+                                        <div class="feature-description">In-depth user analysis & journey mapping</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fas fa-check"></i>
+                                    <div class="feature-content">
+                                        <div class="feature-main">Complete UI Design</div>
+                                        <div class="feature-sub">(15 Screens)</div>
+                                        <div class="feature-description">Full user interface with interactions</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fas fa-check"></i>
+                                    <div class="feature-content">
+                                        <div class="feature-main">Interactive Prototype</div>
+                                        <div class="feature-description">High-fidelity clickable prototype</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fas fa-check"></i>
+                                    <div class="feature-content">
+                                        <div class="feature-main">Full Design System</div>
+                                        <div class="feature-description">Complete component library</div>
+                                    </div>
+                                </li>
                             </ul>
-                            <a href="#contact" class="plan-button">Get Started</a>
+                            <div class="plan-button">
+                                <span data-service="design-ui" data-price="1499" data-period="project">Get Started</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
                         </div>
 
-                        <!-- Enterprise UI/UX Package -->
+                        <!-- Enterprise Package -->
                         <div class="pricing-plan">
+                            <div class="plan-tag">Most Features</div>
                             <div class="plan-header">
-                                <span class="plan-category">UI/UX Design</span>
+                                <div class="plan-category">UI/UX DESIGN</div>
                                 <h3 class="plan-name">Enterprise Package</h3>
-                                <div class="plan-price">$4,999<span>/project</span></div>
+                                <div class="plan-price">
+                                    <span class="currency">$</span>
+                                    <span class="amount">2,999</span>
+                                    <span class="period">/project</span>
+                                </div>
                             </div>
                             <ul class="plan-features">
-                                <li class="included"><i class="fas fa-check"></i>Unlimited Screen Designs</li>
-                                <li class="included"><i class="fas fa-check"></i>Comprehensive User Research</li>
-                                <li class="included"><i class="fas fa-check"></i>Usability Testing</li>
-                                <li class="included"><i class="fas fa-check"></i>Complete Design System</li>
-                                <li class="included"><i class="fas fa-check"></i>High-Fidelity Prototypes</li>
-                                <li class="included"><i class="fas fa-check"></i>Custom Animations & Micro-interactions</li>
-                                <li class="included"><i class="fas fa-check"></i>Multi-platform Design</li>
-                                <li class="included"><i class="fas fa-check"></i>Unlimited Revisions</li>
+                                <li>
+                                    <i class="fas fa-check"></i>
+                                    <div class="feature-content">
+                                        <div class="feature-main">Full UX Research Suite</div>
+                                        <div class="feature-description">Complete user research & testing</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fas fa-check"></i>
+                                    <div class="feature-content">
+                                        <div class="feature-main">Enterprise UI Design</div>
+                                        <div class="feature-description">Unlimited screens & iterations</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fas fa-check"></i>
+                                    <div class="feature-content">
+                                        <div class="feature-main">Advanced Prototyping</div>
+                                        <div class="feature-description">Complex interactions & animations</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fas fa-check"></i>
+                                    <div class="feature-content">
+                                        <div class="feature-main">Enterprise Design System</div>
+                                        <div class="feature-description">Multi-platform component library</div>
+                                    </div>
+                                </li>
                             </ul>
-                            <a href="#contact" class="plan-button">Get Started</a>
-                        </div>
-
-                        <!-- Specialized UI/UX Package -->
-                        <div class="pricing-plan">
-                            <div class="plan-header">
-                                <span class="plan-category">UI/UX Design</span>
-                                <h3 class="plan-name">SaaS Package</h3>
-                                <div class="plan-price">$6,999<span>/project</span></div>
+                            <div class="plan-button">
+                                <span data-service="design-ui" data-price="2999" data-period="project">Get Started</span>
+                                <i class="fas fa-arrow-right"></i>
                             </div>
-                            <ul class="plan-features">
-                                <li class="included"><i class="fas fa-check"></i>Complete SaaS Platform Design</li>
-                                <li class="included"><i class="fas fa-check"></i>Dashboard & Analytics Design</li>
-                                <li class="included"><i class="fas fa-check"></i>Complex User Flows</li>
-                                <li class="included"><i class="fas fa-check"></i>Data Visualization Design</li>
-                                <li class="included"><i class="fas fa-check"></i>Design System Documentation</li>
-                                <li class="included"><i class="fas fa-check"></i>Developer Handoff Support</li>
-                                <li class="included"><i class="fas fa-check"></i>3 Months Support</li>
-                                <li class="included"><i class="fas fa-check"></i>Priority Service</li>
-                            </ul>
-                            <a href="#contact" class="plan-button">Get Started</a>
-                        </div>
-
-                        <!-- Monthly UI/UX Package -->
-                        <div class="pricing-plan">
-                            <div class="plan-header">
-                                <span class="plan-category">UI/UX Design</span>
-                                <h3 class="plan-name">Monthly Retainer</h3>
-                                <div class="plan-price">$3,499<span>/month</span></div>
-                            </div>
-                            <ul class="plan-features">
-                                <li class="included"><i class="fas fa-check"></i>Dedicated UI/UX Designer</li>
-                                <li class="included"><i class="fas fa-check"></i>Ongoing Design Support</li>
-                                <li class="included"><i class="fas fa-check"></i>Unlimited Design Requests</li>
-                                <li class="included"><i class="fas fa-check"></i>Design System Updates</li>
-                                <li class="included"><i class="fas fa-check"></i>Weekly Progress Meetings</li>
-                                <li class="included"><i class="fas fa-check"></i>A/B Testing Support</li>
-                                <li class="included"><i class="fas fa-check"></i>Analytics Integration</li>
-                                <li class="included"><i class="fas fa-check"></i>Priority Support</li>
-                            </ul>
-                            <a href="#contact" class="plan-button">Get Started</a>
                         </div>
                     </div>
                 </div>
@@ -552,64 +684,150 @@
                 <!-- Mobile Apps Plans -->
                 <div class="pricing-category" data-category="mobile">
                     <div class="pricing-grid">
-                        <!-- Basic Mobile App Package -->
+                        <!-- Basic Package -->
                         <div class="pricing-plan">
+                            <div class="plan-tag">Most Popular</div>
                             <div class="plan-header">
-                                <span class="plan-category">Mobile Apps</span>
+                                <div class="plan-category">MOBILE APPS</div>
                                 <h3 class="plan-name">Basic Package</h3>
-                                <div class="plan-price">$4,999<span>/project</span></div>
+                                <div class="plan-price">
+                                    <span class="currency">$</span>
+                                    <span class="amount">4,999</span>
+                                    <span class="period">/project</span>
+                                </div>
                             </div>
                             <ul class="plan-features">
-                                <li class="included"><i class="fas fa-check"></i>Single Platform (iOS or Android)</li>
-                                <li class="included"><i class="fas fa-check"></i>Basic User Authentication</li>
-                                <li class="included"><i class="fas fa-check"></i>Up to 5 Core Features</li>
-                                <li class="included"><i class="fas fa-check"></i>Basic API Integration</li>
-                                <li class="included"><i class="fas fa-check"></i>Push Notifications</li>
-                                <li class="included"><i class="fas fa-check"></i>App Store Submission</li>
-                                <li class="included"><i class="fas fa-check"></i>3 Months Support</li>
-                                <li class="included"><i class="fas fa-check"></i>Bug Fixes</li>
+                                <li>
+                                    <i class="fas fa-check"></i>
+                                    <div class="feature-content">
+                                        <div class="feature-main">Single Platform App</div>
+                                        <div class="feature-sub">(iOS or Android)</div>
+                                        <div class="feature-description">Native mobile application</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fas fa-check"></i>
+                                    <div class="feature-content">
+                                        <div class="feature-main">Essential Features</div>
+                                        <div class="feature-description">Core functionality implementation</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fas fa-check"></i>
+                                    <div class="feature-content">
+                                        <div class="feature-main">User Authentication</div>
+                                        <div class="feature-description">Basic login and registration</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fas fa-check"></i>
+                                    <div class="feature-content">
+                                        <div class="feature-main">Basic API Integration</div>
+                                        <div class="feature-description">RESTful API connectivity</div>
+                                    </div>
+                                </li>
                             </ul>
-                            <a href="#contact" class="plan-button">Get Started</a>
+                            <div class="plan-button">
+                                <span data-service="mobile-cross" data-price="4999" data-period="project">Get Started</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
                         </div>
 
-                        <!-- Professional Mobile App Package -->
-                        <div class="pricing-plan popular">
+                        <!-- Professional Package -->
+                        <div class="pricing-plan featured">
+                            <div class="plan-tag">Best Value</div>
                             <div class="plan-header">
-                                <span class="plan-category">Mobile Apps</span>
+                                <div class="plan-category">MOBILE APPS</div>
                                 <h3 class="plan-name">Professional Package</h3>
-                                <div class="plan-price">$8,999<span>/project</span></div>
+                                <div class="plan-price">
+                                    <span class="currency">$</span>
+                                    <span class="amount">9,999</span>
+                                    <span class="period">/project</span>
+                                </div>
                             </div>
                             <ul class="plan-features">
-                                <li class="included"><i class="fas fa-check"></i>Cross-Platform (iOS & Android)</li>
-                                <li class="included"><i class="fas fa-check"></i>Advanced Authentication</li>
-                                <li class="included"><i class="fas fa-check"></i>Up to 10 Custom Features</li>
-                                <li class="included"><i class="fas fa-check"></i>Custom API Development</li>
-                                <li class="included"><i class="fas fa-check"></i>Offline Functionality</li>
-                                <li class="included"><i class="fas fa-check"></i>Analytics Integration</li>
-                                <li class="included"><i class="fas fa-check"></i>6 Months Support</li>
-                                <li class="included"><i class="fas fa-check"></i>Performance Optimization</li>
+                                <li>
+                                    <i class="fas fa-check"></i>
+                                    <div class="feature-content">
+                                        <div class="feature-main">Cross-Platform App</div>
+                                        <div class="feature-sub">(iOS & Android)</div>
+                                        <div class="feature-description">React Native or Flutter development</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fas fa-check"></i>
+                                    <div class="feature-content">
+                                        <div class="feature-main">Advanced Features</div>
+                                        <div class="feature-description">Full feature implementation</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fas fa-check"></i>
+                                    <div class="feature-content">
+                                        <div class="feature-main">Social Integration</div>
+                                        <div class="feature-description">Multiple login methods</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fas fa-check"></i>
+                                    <div class="feature-content">
+                                        <div class="feature-main">Push Notifications</div>
+                                        <div class="feature-description">Real-time updates & alerts</div>
+                                    </div>
+                                </li>
                             </ul>
-                            <a href="#contact" class="plan-button">Get Started</a>
+                            <div class="plan-button">
+                                <span data-service="mobile-cross" data-price="9999" data-period="project">Get Started</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
                         </div>
 
-                        <!-- Enterprise Mobile App Package -->
+                        <!-- Enterprise Package -->
                         <div class="pricing-plan">
+                            <div class="plan-tag">Most Features</div>
                             <div class="plan-header">
-                                <span class="plan-category">Mobile Apps</span>
+                                <div class="plan-category">MOBILE APPS</div>
                                 <h3 class="plan-name">Enterprise Package</h3>
-                                <div class="plan-price">$14,999<span>/project</span></div>
+                                <div class="plan-price">
+                                    <span class="currency">$</span>
+                                    <span class="amount">19,999</span>
+                                    <span class="period">/project</span>
+                                </div>
                             </div>
                             <ul class="plan-features">
-                                <li class="included"><i class="fas fa-check"></i>Native Apps (iOS & Android)</li>
-                                <li class="included"><i class="fas fa-check"></i>Complex Features & Integrations</li>
-                                <li class="included"><i class="fas fa-check"></i>Custom Backend Development</li>
-                                <li class="included"><i class="fas fa-check"></i>Advanced Security Features</li>
-                                <li class="included"><i class="fas fa-check"></i>Real-time Sync</li>
-                                <li class="included"><i class="fas fa-check"></i>Payment Gateway Integration</li>
-                                <li class="included"><i class="fas fa-check"></i>12 Months Support</li>
-                                <li class="included"><i class="fas fa-check"></i>Dedicated Project Manager</li>
+                                <li>
+                                    <i class="fas fa-check"></i>
+                                    <div class="feature-content">
+                                        <div class="feature-main">Custom Enterprise Solution</div>
+                                        <div class="feature-description">Tailored to your business needs</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fas fa-check"></i>
+                                    <div class="feature-content">
+                                        <div class="feature-main">Advanced Analytics</div>
+                                        <div class="feature-description">Deep user insights & tracking</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fas fa-check"></i>
+                                    <div class="feature-content">
+                                        <div class="feature-main">Offline Functionality</div>
+                                        <div class="feature-description">Work without internet connection</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fas fa-check"></i>
+                                    <div class="feature-content">
+                                        <div class="feature-main">Enterprise Integration</div>
+                                        <div class="feature-description">Connect with existing systems</div>
+                                    </div>
+                                </li>
                             </ul>
-                            <a href="#contact" class="plan-button">Get Started</a>
+                            <div class="plan-button">
+                                <span data-service="mobile-cross" data-price="19999" data-period="project">Get Started</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -617,61 +835,150 @@
                 <!-- Web Development Plans -->
                 <div class="pricing-category" data-category="web">
                     <div class="pricing-grid">
+                        <!-- Basic Package -->
                         <div class="pricing-plan">
+                            <div class="plan-tag">Most Popular</div>
                             <div class="plan-header">
-                                <span class="plan-category">Web Development</span>
-                                <h3 class="plan-name">Basic Website</h3>
-                                <div class="plan-price">$999<span>/project</span></div>
+                                <div class="plan-category">WEB DEVELOPMENT</div>
+                                <h3 class="plan-name">Basic Package</h3>
+                                <div class="plan-price">
+                                    <span class="currency">$</span>
+                                    <span class="amount">2,999</span>
+                                    <span class="period">/project</span>
+                                </div>
                             </div>
                             <ul class="plan-features">
-                                <li class="included"><i class="fas fa-check"></i>5 Pages Website</li>
-                                <li class="included"><i class="fas fa-check"></i>Mobile Responsive Design</li>
-                                <li class="included"><i class="fas fa-check"></i>Contact Form</li>
-                                <li class="included"><i class="fas fa-check"></i>Basic SEO Setup</li>
-                                <li class="included"><i class="fas fa-check"></i>Social Media Integration</li>
-                                <li class="included"><i class="fas fa-check"></i>Google Analytics</li>
-                                <li class="included"><i class="fas fa-check"></i>2 Rounds of Revisions</li>
-                                <li class="included"><i class="fas fa-check"></i>2 Weeks Delivery</li>
+                                <li>
+                                    <i class="fas fa-check"></i>
+                                    <div class="feature-content">
+                                        <div class="feature-main">Responsive Website</div>
+                                        <div class="feature-sub">(Up to 5 Pages)</div>
+                                        <div class="feature-description">Mobile-friendly design</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fas fa-check"></i>
+                                    <div class="feature-content">
+                                        <div class="feature-main">Content Management</div>
+                                        <div class="feature-description">Basic CMS integration</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fas fa-check"></i>
+                                    <div class="feature-content">
+                                        <div class="feature-main">Contact Form</div>
+                                        <div class="feature-description">Email form integration</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fas fa-check"></i>
+                                    <div class="feature-content">
+                                        <div class="feature-main">SEO Basics</div>
+                                        <div class="feature-description">Search engine optimization</div>
+                                    </div>
+                                </li>
                             </ul>
-                            <a href="#contact" class="plan-button">Get Started</a>
+                            <div class="plan-button">
+                                <span data-service="web-custom" data-price="2999" data-period="project">Get Started</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
                         </div>
 
-                        <div class="pricing-plan popular">
+                        <!-- Professional Package -->
+                        <div class="pricing-plan featured">
+                            <div class="plan-tag">Best Value</div>
                             <div class="plan-header">
-                                <span class="plan-category">Web Development</span>
-                                <h3 class="plan-name">Business Website</h3>
-                                <div class="plan-price">$2,499<span>/project</span></div>
+                                <div class="plan-category">WEB DEVELOPMENT</div>
+                                <h3 class="plan-name">Professional Package</h3>
+                                <div class="plan-price">
+                                    <span class="currency">$</span>
+                                    <span class="amount">5,999</span>
+                                    <span class="period">/project</span>
+                                </div>
                             </div>
                             <ul class="plan-features">
-                                <li class="included"><i class="fas fa-check"></i>Up to 10 Pages</li>
-                                <li class="included"><i class="fas fa-check"></i>Custom Design</li>
-                                <li class="included"><i class="fas fa-check"></i>CMS Integration</li>
-                                <li class="included"><i class="fas fa-check"></i>Advanced Contact Forms</li>
-                                <li class="included"><i class="fas fa-check"></i>Complete SEO Package</li>
-                                <li class="included"><i class="fas fa-check"></i>Blog Setup</li>
-                                <li class="included"><i class="fas fa-check"></i>Speed Optimization</li>
-                                <li class="included"><i class="fas fa-check"></i>3 Months Support</li>
+                                <li>
+                                    <i class="fas fa-check"></i>
+                                    <div class="feature-content">
+                                        <div class="feature-main">Custom Website</div>
+                                        <div class="feature-sub">(Up to 10 Pages)</div>
+                                        <div class="feature-description">Unique design & functionality</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fas fa-check"></i>
+                                    <div class="feature-content">
+                                        <div class="feature-main">E-commerce Features</div>
+                                        <div class="feature-description">Online store functionality</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fas fa-check"></i>
+                                    <div class="feature-content">
+                                        <div class="feature-main">Advanced Integrations</div>
+                                        <div class="feature-description">Third-party APIs & plugins</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fas fa-check"></i>
+                                    <div class="feature-content">
+                                        <div class="feature-main">Performance Optimization</div>
+                                        <div class="feature-description">Speed & security enhancements</div>
+                                    </div>
+                                </li>
                             </ul>
-                            <a href="#contact" class="plan-button">Get Started</a>
+                            <div class="plan-button">
+                                <span data-service="web-custom" data-price="5999" data-period="project">Get Started</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
                         </div>
 
+                        <!-- Enterprise Package -->
                         <div class="pricing-plan">
+                            <div class="plan-tag">Most Features</div>
                             <div class="plan-header">
-                                <span class="plan-category">Web Development</span>
-                                <h3 class="plan-name">E-commerce Store</h3>
-                                <div class="plan-price">$4,999<span>/project</span></div>
+                                <div class="plan-category">WEB DEVELOPMENT</div>
+                                <h3 class="plan-name">Enterprise Package</h3>
+                                <div class="plan-price">
+                                    <span class="currency">$</span>
+                                    <span class="amount">12,999</span>
+                                    <span class="period">/project</span>
+                                </div>
                             </div>
                             <ul class="plan-features">
-                                <li class="included"><i class="fas fa-check"></i>Full E-commerce Setup</li>
-                                <li class="included"><i class="fas fa-check"></i>Product Management</li>
-                                <li class="included"><i class="fas fa-check"></i>Payment Gateway Integration</li>
-                                <li class="included"><i class="fas fa-check"></i>Order Management System</li>
-                                <li class="included"><i class="fas fa-check"></i>Inventory Management</li>
-                                <li class="included"><i class="fas fa-check"></i>Customer Dashboard</li>
-                                <li class="included"><i class="fas fa-check"></i>Admin Dashboard</li>
-                                <li class="included"><i class="fas fa-check"></i>6 Months Support</li>
+                                <li>
+                                    <i class="fas fa-check"></i>
+                                    <div class="feature-content">
+                                        <div class="feature-main">Enterprise Web Platform</div>
+                                        <div class="feature-description">Custom web application</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fas fa-check"></i>
+                                    <div class="feature-content">
+                                        <div class="feature-main">Advanced Analytics</div>
+                                        <div class="feature-description">Custom reporting & insights</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fas fa-check"></i>
+                                    <div class="feature-content">
+                                        <div class="feature-main">Scalable Architecture</div>
+                                        <div class="feature-description">High-performance infrastructure</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fas fa-check"></i>
+                                    <div class="feature-content">
+                                        <div class="feature-main">Enterprise Security</div>
+                                        <div class="feature-description">Advanced security measures</div>
+                                    </div>
+                                </li>
                             </ul>
-                            <a href="#contact" class="plan-button">Get Started</a>
+                            <div class="plan-button">
+                                <span data-service="web-custom" data-price="12999" data-period="project">Get Started</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -679,71 +986,201 @@
                 <!-- Cybersecurity Plans -->
                 <div class="pricing-category" data-category="security">
                     <div class="pricing-grid">
-                        <!-- Basic Security Package -->
+                        <!-- Basic Package -->
                         <div class="pricing-plan">
+                            <div class="plan-tag">Most Popular</div>
                             <div class="plan-header">
-                                <span class="plan-category">Cybersecurity</span>
-                                <h3 class="plan-name">Essential Security</h3>
-                                <div class="plan-price">$1,499<span>/month</span></div>
+                                <div class="plan-category">CYBERSECURITY</div>
+                                <h3 class="plan-name">Basic Package</h3>
+                                <div class="plan-price">
+                                    <span class="currency">$</span>
+                                    <span class="amount">999</span>
+                                    <span class="period">/month</span>
+                                </div>
                             </div>
                             <ul class="plan-features">
-                                <li class="included"><i class="fas fa-check"></i>Vulnerability Assessment</li>
-                                <li class="included"><i class="fas fa-check"></i>Basic Security Monitoring</li>
-                                <li class="included"><i class="fas fa-check"></i>Firewall Management</li>
-                                <li class="included"><i class="fas fa-check"></i>Security Awareness Training</li>
-                                <li class="included"><i class="fas fa-check"></i>Monthly Security Reports</li>
-                                <li class="included"><i class="fas fa-check"></i>Incident Response Plan</li>
-                                <li class="included"><i class="fas fa-check"></i>Email Security</li>
-                                <li class="included"><i class="fas fa-check"></i>8x5 Support</li>
+                                <li>
+                                    <i class="fas fa-check"></i>
+                                    <div class="feature-content">
+                                        <div class="feature-main">Security Assessment</div>
+                                        <div class="feature-description">Basic vulnerability scanning</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fas fa-check"></i>
+                                    <div class="feature-content">
+                                        <div class="feature-main">Firewall Management</div>
+                                        <div class="feature-description">Basic threat protection</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fas fa-check"></i>
+                                    <div class="feature-content">
+                                        <div class="feature-main">Endpoint Security</div>
+                                        <div class="feature-sub">(Up to 10 devices)</div>
+                                        <div class="feature-description">Essential device protection</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fas fa-check"></i>
+                                    <div class="feature-content">
+                                        <div class="feature-main">Security Training</div>
+                                        <div class="feature-description">Basic security awareness</div>
+                                    </div>
+                                </li>
                             </ul>
-                            <a href="#contact" class="plan-button">Get Started</a>
+                            <div class="plan-button">
+                                <span data-service="cloud-security" data-price="999" data-period="month">Get Started</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
                         </div>
 
-                        <!-- Advanced Security Package -->
-                        <div class="pricing-plan popular">
+                        <!-- Professional Package -->
+                        <div class="pricing-plan featured">
+                            <div class="plan-tag">Best Value</div>
                             <div class="plan-header">
-                                <span class="plan-category">Cybersecurity</span>
-                                <h3 class="plan-name">Advanced Security</h3>
-                                <div class="plan-price">$2,999<span>/month</span></div>
+                                <div class="plan-category">CYBERSECURITY</div>
+                                <h3 class="plan-name">Professional Package</h3>
+                                <div class="plan-price">
+                                    <span class="currency">$</span>
+                                    <span class="amount">2,499</span>
+                                    <span class="period">/month</span>
+                                </div>
                             </div>
                             <ul class="plan-features">
-                                <li class="included"><i class="fas fa-check"></i>Penetration Testing</li>
-                                <li class="included"><i class="fas fa-check"></i>24/7 Security Monitoring</li>
-                                <li class="included"><i class="fas fa-check"></i>Advanced Threat Protection</li>
-                                <li class="included"><i class="fas fa-check"></i>Cloud Security Assessment</li>
-                                <li class="included"><i class="fas fa-check"></i>Compliance Management</li>
-                                <li class="included"><i class="fas fa-check"></i>Security Information & Event Management</li>
-                                <li class="included"><i class="fas fa-check"></i>Data Loss Prevention</li>
-                                <li class="included"><i class="fas fa-check"></i>24/7 Priority Support</li>
+                                <li>
+                                    <i class="fas fa-check"></i>
+                                    <div class="feature-content">
+                                        <div class="feature-main">Advanced Security Suite</div>
+                                        <div class="feature-description">Comprehensive protection</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fas fa-check"></i>
+                                    <div class="feature-content">
+                                        <div class="feature-main">24/7 Monitoring</div>
+                                        <div class="feature-description">Real-time threat detection</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fas fa-check"></i>
+                                    <div class="feature-content">
+                                        <div class="feature-main">Incident Response</div>
+                                        <div class="feature-description">Quick threat mitigation</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fas fa-check"></i>
+                                    <div class="feature-content">
+                                        <div class="feature-main">Compliance Management</div>
+                                        <div class="feature-description">Industry standards adherence</div>
+                                    </div>
+                                </li>
                             </ul>
-                            <a href="#contact" class="plan-button">Get Started</a>
+                            <div class="plan-button">
+                                <span data-service="cloud-security" data-price="2499" data-period="month">Get Started</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
                         </div>
 
-                        <!-- Enterprise Security Package -->
+                        <!-- Enterprise Package -->
                         <div class="pricing-plan">
+                            <div class="plan-tag">Most Features</div>
                             <div class="plan-header">
-                                <span class="plan-category">Cybersecurity</span>
-                                <h3 class="plan-name">Enterprise Security</h3>
-                                <div class="plan-price">$4,999<span>/month</span></div>
+                                <div class="plan-category">CYBERSECURITY</div>
+                                <h3 class="plan-name">Enterprise Package</h3>
+                                <div class="plan-price">
+                                    <span class="currency">$</span>
+                                    <span class="amount">4,999</span>
+                                    <span class="period">/month</span>
+                                </div>
                             </div>
                             <ul class="plan-features">
-                                <li class="included"><i class="fas fa-check"></i>Custom Security Architecture</li>
-                                <li class="included"><i class="fas fa-check"></i>Advanced Persistent Threat Protection</li>
-                                <li class="included"><i class="fas fa-check"></i>Zero Trust Implementation</li>
-                                <li class="included"><i class="fas fa-check"></i>Security Operations Center</li>
-                                <li class="included"><i class="fas fa-check"></i>Threat Intelligence</li>
-                                <li class="included"><i class="fas fa-check"></i>Regulatory Compliance</li>
-                                <li class="included"><i class="fas fa-check"></i>Dedicated Security Team</li>
-                                <li class="included"><i class="fas fa-check"></i>Incident Response Team</li>
+                                <li>
+                                    <i class="fas fa-check"></i>
+                                    <div class="feature-content">
+                                        <div class="feature-main">Enterprise Security Suite</div>
+                                        <div class="feature-description">Complete security solution</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fas fa-check"></i>
+                                    <div class="feature-content">
+                                        <div class="feature-main">SOC as a Service</div>
+                                        <div class="feature-description">Dedicated security team</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fas fa-check"></i>
+                                    <div class="feature-content">
+                                        <div class="feature-main">Advanced Threat Protection</div>
+                                        <div class="feature-description">AI-powered security</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fas fa-check"></i>
+                                    <div class="feature-content">
+                                        <div class="feature-main">Custom Security Policies</div>
+                                        <div class="feature-description">Tailored to your needs</div>
+                                    </div>
+                                </li>
                             </ul>
-                            <a href="#contact" class="plan-button">Get Started</a>
+                            <div class="plan-button">
+                                <span data-service="cloud-security" data-price="4999" data-period="month">Get Started</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- Add after the pricing-help section -->
+    <div class="custom-plan-builder">
+        <button class="custom-plan-btn" id="customPlanBuilder">
+            <i class="fas fa-tools"></i>
+            Build Custom Plan
+        </button>
+    </div>
+
+        <!-- Add before the pricing-container -->
+        <div class="pricing-faq">
+            <h3>Frequently Asked Questions</h3>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>What payment methods do you accept?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        We accept all major credit cards, PayPal, and bank transfers. For enterprise plans, we also support purchase orders.
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Can I upgrade or downgrade my plan?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Yes, you can change your plan at any time. Upgrades take effect immediately, while downgrades take effect at the start of your next billing cycle.
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Do you offer refunds?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        We offer a 30-day money-back guarantee for all our plans. If you're not satisfied, contact our support team for a full refund.
+                    </div>
+                </div>
+            </div>
+        </div>
+        
     </section>
 
+    
     <section id="work" class="portfolio">
         <div class="section-container">
             <div class="section-header">
@@ -1529,11 +1966,11 @@
                     <div class="team-member">
                         <div class="member-image">
                             <img src="Iqbal Ahmed.jpg" 
-                                 alt="Iqbal Ahmed"
+                                 alt="John Anderson"
                                  loading="lazy">
                         </div>
                         <div class="member-info">
-                            <h3>Iqbal Ahmed</h3>
+                            <h3>John Anderson</h3>
                             <span class="position">Frontend Lead</span>
                             <p class="member-bio">React & Next.js Expert</p>
                         </div>
@@ -1568,11 +2005,10 @@
                     <div class="team-member">
                         <div class="member-image">
                             <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=800&q=80" 
-                                 alt="Emma Watson"
-                                 loading="lazy">
+                                 alt="Professional Business Representative">
                         </div>
                         <div class="member-info">
-                            <h3>Emma Watson</h3>
+                            <h3>Professional Business Representative</h3>
                             <span class="position">Project Manager</span>
                             <p class="member-bio">Agile & Scrum Master</p>
                         </div>
@@ -1581,11 +2017,11 @@
                     <div class="team-member">
                         <div class="member-image">
                             <img src="https://images.unsplash.com/photo-1556157382-97eda2d62296?w=800&q=80" 
-                                 alt="Sujon Deb"
+                                 alt="Michael Torres"
                                  loading="lazy">
                         </div>
                         <div class="member-info">
-                            <h3>Sujon Deb</h3>
+                            <h3>Michael Torres</h3>
                             <span class="position">Mobile Developer</span>
                             <p class="member-bio">React Native & iOS</p>
                         </div>
@@ -1971,52 +2407,40 @@
                     <select id="service" name="service" class="form-control" required>
                         <option value="" disabled selected>Select a Service</option>
                         
-                        <optgroup label="Web Development">
-                            <option value="web-custom">Custom Website Development</option>
-                            <option value="web-ecommerce">E-commerce Solutions</option>
-                            <option value="web-cms">Content Management Systems</option>
-                            <option value="web-portal">Web Portal Development</option>
-                            <option value="web-api">API Development & Integration</option>
-                        </optgroup>
-
-                        <optgroup label="Mobile Development">
-                            <option value="mobile-ios">iOS App Development</option>
-                            <option value="mobile-android">Android App Development</option>
-                            <option value="mobile-cross">Cross-Platform Development</option>
-                            <option value="mobile-flutter">Flutter Development</option>
-                            <option value="mobile-react">React Native Development</option>
-                        </optgroup>
-
-                        <optgroup label="UI/UX Design">
-                            <option value="design-ui">User Interface Design</option>
-                            <option value="design-ux">User Experience Design</option>
-                            <option value="design-prototype">Prototyping & Wireframing</option>
-                            <option value="design-brand">Brand Identity Design</option>
-                            <option value="design-mobile">Mobile App Design</option>
+                        <optgroup label="Digital Marketing">
+                            <option value="marketing-starter">Starter Package ($599/month)</option>
+                            <option value="marketing-professional">Professional Package ($999/month)</option>
+                            <option value="marketing-enterprise">Enterprise Package ($1,999/month)</option>
                         </optgroup>
 
                         <optgroup label="Graphics Design">
-                            <option value="graphics-brand">Brand Identity & Logos</option>
-                            <option value="graphics-print">Print Design</option>
-                            <option value="graphics-social">Social Media Graphics</option>
-                            <option value="graphics-marketing">Marketing Materials</option>
-                            <option value="graphics-illustration">Custom Illustrations</option>
+                            <option value="graphics-brand">Basic Package ($299/package)</option>
+                            <option value="graphics-brand-pro">Professional Package ($599/package)</option>
+                            <option value="graphics-brand-enterprise">Enterprise Package ($1,499/package)</option>
                         </optgroup>
 
-                        <optgroup label="Digital Marketing">
-                            <option value="marketing-seo">Search Engine Optimization</option>
-                            <option value="marketing-social">Social Media Marketing</option>
-                            <option value="marketing-content">Content Marketing</option>
-                            <option value="marketing-email">Email Marketing</option>
-                            <option value="marketing-ppc">PPC Advertising</option>
+                        <optgroup label="UI/UX Design">
+                            <option value="design-ui">Basic Package ($799/project)</option>
+                            <option value="design-ui-pro">Professional Package ($1,499/project)</option>
+                            <option value="design-ui-enterprise">Enterprise Package ($2,999/project)</option>
                         </optgroup>
 
-                        <optgroup label="Cloud Solutions">
-                            <option value="cloud-aws">AWS Cloud Services</option>
-                            <option value="cloud-azure">Microsoft Azure</option>
-                            <option value="cloud-google">Google Cloud Platform</option>
-                            <option value="cloud-devops">DevOps Services</option>
-                            <option value="cloud-security">Cloud Security</option>
+                        <optgroup label="Mobile Development">
+                            <option value="mobile-cross">Basic Package ($4,999/project)</option>
+                            <option value="mobile-cross-pro">Professional Package ($9,999/project)</option>
+                            <option value="mobile-cross-enterprise">Enterprise Package ($19,999/project)</option>
+                        </optgroup>
+
+                        <optgroup label="Web Development">
+                            <option value="web-custom">Basic Package ($2,999/project)</option>
+                            <option value="web-custom-pro">Professional Package ($5,999/project)</option>
+                            <option value="web-custom-enterprise">Enterprise Package ($12,999/project)</option>
+                        </optgroup>
+
+                        <optgroup label="Cybersecurity">
+                            <option value="cloud-security">Basic Package ($999/month)</option>
+                            <option value="cloud-security-pro">Professional Package ($2,499/month)</option>
+                            <option value="cloud-security-enterprise">Enterprise Package ($4,999/month)</option>
                         </optgroup>
                     </select>
                     <label for="service">Choose Your Service</label>
@@ -2032,6 +2456,121 @@
             </form>
         </div>
     </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="section-header">
+            <h2>About FSPTeam</h2>
+            <p>Transforming Ideas into Digital Excellence</p>
+        </div>
+        
+        <div class="about-content">
+            <div class="about-grid">
+                <div class="about-text">
+                    <h3>Who We Are</h3>
+                    <p>FSPTeam is a leading digital solutions provider with over 10 years of experience in delivering cutting-edge technology and creative solutions. Our team of passionate experts combines innovation with reliability to help businesses thrive in the digital age.</p>
+                    
+                    <h3>Our Mission</h3>
+                    <p>To empower businesses through innovative digital solutions that drive growth, enhance efficiency, and create lasting value for our clients.</p>
+                    
+                    <h3>Our Vision</h3>
+                    <p>To be the global leader in digital transformation, setting new standards of excellence in technology and creative solutions.</p>
+                    
+                    <div class="about-stats">
+                        <div class="stat">
+                            <i class="fas fa-globe"></i>
+                            <div class="stat-text">
+                                <h4>Global Reach</h4>
+                                <p>Serving clients in 25+ countries</p>
+                            </div>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-users"></i>
+                            <div class="stat-text">
+                                <h4>Expert Team</h4>
+                                <p>50+ skilled professionals</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-features">
+                    <h3>Our Expertise</h3>
+                    <div class="features-grid">
+                        <div class="feature">
+                            <i class="fas fa-rocket"></i>
+                            <div class="feature-content">
+                                <h4>Digital Marketing</h4>
+                                <p>Strategic campaigns that drive results</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-palette"></i>
+                            <div class="feature-content">
+                                <h4>Graphics Design</h4>
+                                <p>Creative visual solutions</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-pencil-ruler"></i>
+                            <div class="feature-content">
+                                <h4>UI/UX Design</h4>
+                                <p>User-centered experiences</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-mobile-alt"></i>
+                            <div class="feature-content">
+                                <h4>Mobile Apps</h4>
+                                <p>Native & cross-platform solutions</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-code"></i>
+                            <div class="feature-content">
+                                <h4>Web Development</h4>
+                                <p>Custom web solutions</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-shield-alt"></i>
+                            <div class="feature-content">
+                                <h4>Cybersecurity</h4>
+                                <p>Advanced protection systems</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="about-values">
+                <h3>Our Core Values</h3>
+                <div class="values-grid">
+                    <div class="value-item">
+                        <i class="fas fa-lightbulb"></i>
+                        <h4>Innovation</h4>
+                        <p>Pushing boundaries with creative solutions</p>
+                    </div>
+                    <div class="value-item">
+                        <i class="fas fa-handshake"></i>
+                        <h4>Integrity</h4>
+                        <p>Building trust through transparency</p>
+                    </div>
+                    <div class="value-item">
+                        <i class="fas fa-chart-line"></i>
+                        <h4>Excellence</h4>
+                        <p>Delivering outstanding results</p>
+                    </div>
+                    <div class="value-item">
+                        <i class="fas fa-users"></i>
+                        <h4>Collaboration</h4>
+                        <p>Working together for success</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <footer class="footer">
         <div class="footer-container">
@@ -2106,6 +2645,7 @@
         </div>
         </footer>
 
-        <script src="script.js"></script>
+    <!-- Add this before closing body tag -->
+    <script src="script.js"></script>
 </body>
 </html>
